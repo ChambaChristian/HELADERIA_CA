@@ -102,19 +102,21 @@ namespace HELADERIA_CA
             // 
             // txt_usu
             // 
+            this.txt_usu.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_usu.Location = new System.Drawing.Point(238, 282);
             this.txt_usu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_usu.Name = "txt_usu";
-            this.txt_usu.Size = new System.Drawing.Size(179, 24);
+            this.txt_usu.Size = new System.Drawing.Size(179, 30);
             this.txt_usu.TabIndex = 5;
             // 
             // txt_pass
             // 
+            this.txt_pass.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_pass.Location = new System.Drawing.Point(238, 332);
             this.txt_pass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.PasswordChar = '*';
-            this.txt_pass.Size = new System.Drawing.Size(179, 24);
+            this.txt_pass.Size = new System.Drawing.Size(179, 30);
             this.txt_pass.TabIndex = 6;
             // 
             // btn_ingresar

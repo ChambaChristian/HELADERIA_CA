@@ -20,7 +20,7 @@ namespace HELADERIA_CA
         }
         private void cargar_producto()
         {
-            var query = from c in dc.Tbl_productos select c;
+            var query = from c in dc.Tbl_producto select c;
             dgv_prod.DataSource = query;
         }
         private void limpiar()
@@ -59,13 +59,13 @@ namespace HELADERIA_CA
             {
                 try
                 {
-                    var query = new Tbl_productos
+                    var query = new Tbl_producto
                     {
-                        prod_cod = txt_cod.Text,
+                        prod_codigo = txt_cod.Text,
                         prod_nombre = txt_nom.Text,
-                        prod_precio = txt_pre.Text
+                        //prod_precio = txt_pre.Text
                     };
-                    dc.Tbl_productos.InsertOnSubmit(query);
+                    dc.Tbl_producto.InsertOnSubmit(query);
                     dc.SubmitChanges();
                     MessageBox.Show("Datos guardados");
                     cargar_producto();
@@ -89,10 +89,10 @@ namespace HELADERIA_CA
             {
                 try
                 {
-                    var q = (from c in dc.Tbl_productos where c.prod_id == Convert.ToInt32(prod_id) select c).First();
-                    q.prod_cod = txt_cod.Text;
+                    var q = (from c in dc.Tbl_producto where c.prod_id == Convert.ToInt32(prod_id) select c).First();
+                    q.prod_codigo = txt_cod.Text;
                     q.prod_nombre = txt_nom.Text;
-                    q.prod_precio = txt_pre.Text;
+                    //q.prod_precio = txt_pre.Text;
                     dc.SubmitChanges();
                     MessageBox.Show("Datos editados");
                     cargar_producto();
@@ -117,8 +117,8 @@ namespace HELADERIA_CA
             {
                 try
                 {
-                    var query = (from c in dc.Tbl_productos where c.prod_id == Convert.ToInt32(prod_id) select c).First();
-                    dc.Tbl_productos.DeleteOnSubmit(query);
+                    var query = (from c in dc.Tbl_producto where c.prod_id == Convert.ToInt32(prod_id) select c).First();
+                    dc.Tbl_producto.DeleteOnSubmit(query);
                     dc.SubmitChanges();
                     MessageBox.Show("Datos eliminados");
                     cargar_producto();
@@ -135,7 +135,7 @@ namespace HELADERIA_CA
 
         private void txt_bus_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            var query = from c in dc.Tbl_productos where c.prod_nombre.Contains(txt_bus.Text) select c;
+            var query = from c in dc.Tbl_producto where c.prod_nombre.Contains(txt_bus.Text) select c;
             dgv_prod.DataSource = query;
         }
 
