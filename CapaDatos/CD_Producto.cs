@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-    class CD_Producto
+    public class CD_Producto
     {
         //INSTACIACION DE LA CLASE CONEXION
         private CD_Conexion cn = new CD_Conexion();

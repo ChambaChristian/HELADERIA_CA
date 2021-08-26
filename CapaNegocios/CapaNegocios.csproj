@@ -42,13 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CN_Registrar.cs" />
+    <Compile Include="CN_Productos.cs" />
     <Compile Include="CN_Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
-      <Project>{38407C42-9192-4AA9-B347-A41F12B87BAB}</Project>
+      <Project>{38407c42-9192-4aa9-b347-a41f12b87bab}</Project>
       <Name>CapaDatos</Name>
     </ProjectReference>
   </ItemGroup>
