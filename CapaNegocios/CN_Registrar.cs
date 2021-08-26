@@ -12,7 +12,7 @@ namespace CapaNegocios
     class CN_Registrar
     {
 
-        public DataClasses1DataContext dc = new DataClasses1DataContext();
+        
     
         
     }

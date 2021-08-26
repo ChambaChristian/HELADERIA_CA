@@ -31,6 +31,9 @@ namespace HELADERIA_CA
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUDUsuario));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_salir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dgv_usuario = new System.Windows.Forms.DataGridView();
             this.txt_correo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -54,18 +57,23 @@ namespace HELADERIA_CA
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dgv_usuario = new System.Windows.Forms.DataGridView();
-            this.btn_salir = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_rol = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_estado = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.txt_estado);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.txt_rol);
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.btn_salir);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.dgv_usuario);
@@ -95,8 +103,47 @@ namespace HELADERIA_CA
             this.panel1.Location = new System.Drawing.Point(-2, 15);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1323, 785);
+            this.panel1.Size = new System.Drawing.Size(1323, 813);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_salir
+            // 
+            this.btn_salir.BackColor = System.Drawing.Color.PowderBlue;
+            this.btn_salir.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_salir.Location = new System.Drawing.Point(1154, 761);
+            this.btn_salir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(112, 40);
+            this.btn_salir.TabIndex = 1;
+            this.btn_salir.Text = "Salir";
+            this.btn_salir.UseVisualStyleBackColor = false;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PowderBlue;
+            this.button1.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(41, 767);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 34);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Regresar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // dgv_usuario
+            // 
+            this.dgv_usuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_usuario.Location = new System.Drawing.Point(41, 483);
+            this.dgv_usuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dgv_usuario.Name = "dgv_usuario";
+            this.dgv_usuario.RowHeadersWidth = 51;
+            this.dgv_usuario.RowTemplate.Height = 24;
+            this.dgv_usuario.Size = new System.Drawing.Size(1225, 269);
+            this.dgv_usuario.TabIndex = 0;
+            this.dgv_usuario.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_usuario_CellMouseClick);
             // 
             // txt_correo
             // 
@@ -155,7 +202,7 @@ namespace HELADERIA_CA
             this.btn_elim.BackColor = System.Drawing.Color.PowderBlue;
             this.btn_elim.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_elim.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_elim.Location = new System.Drawing.Point(468, 354);
+            this.btn_elim.Location = new System.Drawing.Point(468, 434);
             this.btn_elim.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_elim.Name = "btn_elim";
             this.btn_elim.Size = new System.Drawing.Size(104, 32);
@@ -169,7 +216,7 @@ namespace HELADERIA_CA
             this.btn_actu.BackColor = System.Drawing.Color.PowderBlue;
             this.btn_actu.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_actu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_actu.Location = new System.Drawing.Point(272, 353);
+            this.btn_actu.Location = new System.Drawing.Point(272, 433);
             this.btn_actu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_actu.Name = "btn_actu";
             this.btn_actu.Size = new System.Drawing.Size(119, 33);
@@ -183,7 +230,7 @@ namespace HELADERIA_CA
             this.btn_guardar.BackColor = System.Drawing.Color.PowderBlue;
             this.btn_guardar.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_guardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_guardar.Location = new System.Drawing.Point(52, 354);
+            this.btn_guardar.Location = new System.Drawing.Point(52, 434);
             this.btn_guardar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(130, 34);
@@ -345,50 +392,51 @@ namespace HELADERIA_CA
             this.label1.TabIndex = 16;
             this.label1.Text = "CRUD USUARIOS";
             // 
-            // dgv_usuario
+            // txt_rol
             // 
-            this.dgv_usuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_usuario.Location = new System.Drawing.Point(41, 403);
-            this.dgv_usuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dgv_usuario.Name = "dgv_usuario";
-            this.dgv_usuario.RowHeadersWidth = 51;
-            this.dgv_usuario.RowTemplate.Height = 24;
-            this.dgv_usuario.Size = new System.Drawing.Size(1225, 269);
-            this.dgv_usuario.TabIndex = 0;
-            this.dgv_usuario.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_usuario_CellMouseClick);
+            this.txt_rol.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_rol.Location = new System.Drawing.Point(220, 355);
+            this.txt_rol.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txt_rol.Name = "txt_rol";
+            this.txt_rol.Size = new System.Drawing.Size(107, 30);
+            this.txt_rol.TabIndex = 41;
             // 
-            // btn_salir
+            // label11
             // 
-            this.btn_salir.BackColor = System.Drawing.Color.PowderBlue;
-            this.btn_salir.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_salir.Location = new System.Drawing.Point(1154, 722);
-            this.btn_salir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(112, 40);
-            this.btn_salir.TabIndex = 1;
-            this.btn_salir.Text = "Salir";
-            this.btn_salir.UseVisualStyleBackColor = false;
-            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(49, 363);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 22);
+            this.label11.TabIndex = 40;
+            this.label11.Text = "Rol:";
             // 
-            // button1
+            // txt_estado
             // 
-            this.button1.BackColor = System.Drawing.Color.PowderBlue;
-            this.button1.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(41, 728);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 34);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "Regresar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.txt_estado.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_estado.Location = new System.Drawing.Point(221, 394);
+            this.txt_estado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txt_estado.Name = "txt_estado";
+            this.txt_estado.Size = new System.Drawing.Size(107, 30);
+            this.txt_estado.TabIndex = 43;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(50, 402);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 22);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Estado:";
             // 
             // CRUDUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 789);
+            this.ClientSize = new System.Drawing.Size(1298, 831);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -397,8 +445,8 @@ namespace HELADERIA_CA
             this.Load += new System.EventHandler(this.CRUDUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -432,5 +480,9 @@ namespace HELADERIA_CA
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgv_usuario;
+        private System.Windows.Forms.TextBox txt_estado;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_rol;
+        private System.Windows.Forms.Label label11;
     }
 }
