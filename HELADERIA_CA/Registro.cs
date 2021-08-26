@@ -9,18 +9,19 @@ using System.Data.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 
 namespace HELADERIA_CA
 {
     public partial class Registro : Form
     {
 
-        
+       SqlConnection con = new SqlConnection("Data Source=CHRISTIAN;Initial Catalog=Heladeria_CA;Integrated Security=True");
         public Registro()
         {
             InitializeComponent();
         }
+        
 
         public void btn_salir_Click(object sender, EventArgs e)
         {
@@ -41,27 +42,25 @@ namespace HELADERIA_CA
         {
             try
             {
-                ////var query = new Tbl_usuarios
-                //{
-                //    usu_usu = txt_usuario.Text,
-                //    usu_nombre = txt_nombre.Text,
-                //    usu_apellido = txt_apellido.Text,
-                //    usu_pass = txt_contrasenia.Text,
-                //    usu_cedula = txt_cedula.Text,
-                //    usu_correo = txt_correo.Text,
-                //    usu_dire = txt_direccion.Text,
-                //    usu_celular = txt_numero.Text,
-                //    usu_estado = "A",
-                //    roles_id = 2
-                //};
-                //dc.Tbl_usuario.InsertOnSubmit(query);
-                //dc.SubmitChanges();
-                MessageBox.Show("Se ha registrado exitosamente");
+                con.Open();
+                string query = "insert into Tbl_usuario values(@usu, @nom, @ape, @pass, @ced, @dir, @correo, @num, 'A', 2)";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@usu", txt_usuario.Text.Trim());
+                cmd.Parameters.AddWithValue("@nom", txt_nombre.Text.Trim());
+                cmd.Parameters.AddWithValue("@ape", txt_apellido.Text.Trim());
+                cmd.Parameters.AddWithValue("@pass", txt_contrasenia.Text.Trim());
+                cmd.Parameters.AddWithValue("@ced", txt_cedula.Text.Trim());
+                
+                cmd.Parameters.AddWithValue("@dir", txt_direccion.Text.Trim());
+                cmd.Parameters.AddWithValue("@correo", txt_correo.Text.Trim());
+                cmd.Parameters.AddWithValue("@num", txt_numero.Text.Trim());
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Usuario registrado exitosamente");
                 limpiar_registro();
             }
             catch (Exception)
             {
-
+                MessageBox.Show("Ocurrio un problema, no se pudo registrar al usuario");
                 throw;
             }
         }
@@ -79,5 +78,6 @@ namespace HELADERIA_CA
             }
            
         }
-    }
+    
+}
 

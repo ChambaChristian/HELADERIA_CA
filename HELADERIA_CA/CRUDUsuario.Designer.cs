@@ -31,6 +31,8 @@ namespace HELADERIA_CA
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUDUsuario));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dgv_usuario = new System.Windows.Forms.DataGridView();
@@ -57,10 +59,8 @@ namespace HELADERIA_CA
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_rol = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txt_estado = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.cmb_rol = new System.Windows.Forms.ComboBox();
+            this.cmb_estado = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_usuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,9 +70,9 @@ namespace HELADERIA_CA
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.txt_estado);
+            this.panel1.Controls.Add(this.cmb_estado);
+            this.panel1.Controls.Add(this.cmb_rol);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.txt_rol);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.btn_salir);
             this.panel1.Controls.Add(this.button1);
@@ -105,6 +105,28 @@ namespace HELADERIA_CA
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1323, 813);
             this.panel1.TabIndex = 0;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(50, 402);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 22);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "Estado:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(49, 363);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 22);
+            this.label11.TabIndex = 40;
+            this.label11.Text = "Rol:";
             // 
             // btn_salir
             // 
@@ -392,45 +414,21 @@ namespace HELADERIA_CA
             this.label1.TabIndex = 16;
             this.label1.Text = "CRUD USUARIOS";
             // 
-            // txt_rol
+            // cmb_rol
             // 
-            this.txt_rol.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_rol.Location = new System.Drawing.Point(220, 355);
-            this.txt_rol.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txt_rol.Name = "txt_rol";
-            this.txt_rol.Size = new System.Drawing.Size(107, 30);
-            this.txt_rol.TabIndex = 41;
+            this.cmb_rol.FormattingEnabled = true;
+            this.cmb_rol.Location = new System.Drawing.Point(220, 363);
+            this.cmb_rol.Name = "cmb_rol";
+            this.cmb_rol.Size = new System.Drawing.Size(121, 26);
+            this.cmb_rol.TabIndex = 43;
             // 
-            // label11
+            // cmb_estado
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(49, 363);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 22);
-            this.label11.TabIndex = 40;
-            this.label11.Text = "Rol:";
-            // 
-            // txt_estado
-            // 
-            this.txt_estado.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_estado.Location = new System.Drawing.Point(221, 394);
-            this.txt_estado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(107, 30);
-            this.txt_estado.TabIndex = 43;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(50, 402);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 22);
-            this.label12.TabIndex = 42;
-            this.label12.Text = "Estado:";
+            this.cmb_estado.FormattingEnabled = true;
+            this.cmb_estado.Location = new System.Drawing.Point(220, 398);
+            this.cmb_estado.Name = "cmb_estado";
+            this.cmb_estado.Size = new System.Drawing.Size(121, 26);
+            this.cmb_estado.TabIndex = 44;
             // 
             // CRUDUsuario
             // 
@@ -480,9 +478,9 @@ namespace HELADERIA_CA
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgv_usuario;
-        private System.Windows.Forms.TextBox txt_estado;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txt_rol;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cmb_estado;
+        private System.Windows.Forms.ComboBox cmb_rol;
     }
 }
