@@ -30,8 +30,6 @@ namespace HELADERIA_CA
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUDProducto));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dgv_prod = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_exit = new System.Windows.Forms.Button();
             this.txt_bus = new System.Windows.Forms.TextBox();
@@ -47,36 +45,16 @@ namespace HELADERIA_CA
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_prod)).BeginInit();
+            this.dgv_producto = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_producto)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Controls.Add(this.dgv_prod);
-            this.panel2.Location = new System.Drawing.Point(1, 314);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(648, 295);
-            this.panel2.TabIndex = 3;
-            // 
-            // dgv_prod
-            // 
-            this.dgv_prod.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_prod.Location = new System.Drawing.Point(4, 0);
-            this.dgv_prod.Name = "dgv_prod";
-            this.dgv_prod.RowHeadersWidth = 51;
-            this.dgv_prod.RowTemplate.Height = 24;
-            this.dgv_prod.Size = new System.Drawing.Size(644, 292);
-            this.dgv_prod.TabIndex = 0;
-            this.dgv_prod.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_prod_CellMouseClick);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Pink;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.dgv_producto);
             this.panel1.Controls.Add(this.btn_exit);
             this.panel1.Controls.Add(this.txt_bus);
             this.panel1.Controls.Add(this.btn_back);
@@ -263,13 +241,23 @@ namespace HELADERIA_CA
             this.label1.TabIndex = 16;
             this.label1.Text = "CRUD PRODUCTOS";
             // 
+            // dgv_producto
+            // 
+            this.dgv_producto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_producto.Location = new System.Drawing.Point(10, 284);
+            this.dgv_producto.Name = "dgv_producto";
+            this.dgv_producto.RowHeadersWidth = 51;
+            this.dgv_producto.RowTemplate.Height = 24;
+            this.dgv_producto.Size = new System.Drawing.Size(644, 334);
+            this.dgv_producto.TabIndex = 36;
+            this.dgv_producto.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_producto_CellMouseClick);
+            // 
             // CRUDProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(655, 666);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -277,17 +265,14 @@ namespace HELADERIA_CA
             this.Name = "CRUDProducto";
             this.Text = "CRUDProducto";
             this.Load += new System.EventHandler(this.CRUDProducto_Load);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_prod)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_producto)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txt_bus;
         private System.Windows.Forms.Label label9;
@@ -303,6 +288,6 @@ namespace HELADERIA_CA
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_back;
-        private System.Windows.Forms.DataGridView dgv_prod;
+        private System.Windows.Forms.DataGridView dgv_producto;
     }
 }
