@@ -28,6 +28,20 @@ namespace CapaDatos
             cn.cerrar_conexion();
             return tabla;
         }
+        public DataTable buscar_usuario(string cedula)
+        {
+            //PROCEDIMMIENTO ALMACENADO
+            cmd.Connection = cn.abrir_conexion();
+            cmd.CommandText = "buscar_usuario";
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@usu_cedula", cedula);
+            cmd.ExecuteNonQuery();
+            cmd.Parameters.Clear();
+            leer = cmd.ExecuteReader();
+            tabla.Load(leer);
+            cn.cerrar_conexion();
+            return tabla;
+        }
         public void insertar_usuario(string usuario, string nombre, string apellido, string pass, string cedula, string correo, string direccion, string celular, string estado, int rol)
         {
             cmd.Connection = cn.abrir_conexion();
@@ -78,6 +92,7 @@ namespace CapaDatos
             cmd.Parameters.Clear();
             cn.cerrar_conexion();
         }
+
     }
 }
   

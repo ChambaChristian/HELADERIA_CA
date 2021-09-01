@@ -31,11 +31,13 @@ namespace HELADERIA_CA
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUDUsuario));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgv_usu = new System.Windows.Forms.DataGridView();
+            this.cmb_estado = new System.Windows.Forms.ComboBox();
+            this.cmb_rol = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_salir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.dgv_usuario = new System.Windows.Forms.DataGridView();
             this.txt_correo = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -59,10 +61,8 @@ namespace HELADERIA_CA
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmb_rol = new System.Windows.Forms.ComboBox();
-            this.cmb_estado = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,13 +70,13 @@ namespace HELADERIA_CA
             // 
             this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.dgv_usu);
             this.panel1.Controls.Add(this.cmb_estado);
             this.panel1.Controls.Add(this.cmb_rol);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.btn_salir);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.dgv_usuario);
             this.panel1.Controls.Add(this.txt_correo);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -105,6 +105,33 @@ namespace HELADERIA_CA
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1323, 813);
             this.panel1.TabIndex = 0;
+            // 
+            // dgv_usu
+            // 
+            this.dgv_usu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_usu.Location = new System.Drawing.Point(41, 474);
+            this.dgv_usu.Name = "dgv_usu";
+            this.dgv_usu.RowHeadersWidth = 51;
+            this.dgv_usu.RowTemplate.Height = 24;
+            this.dgv_usu.Size = new System.Drawing.Size(1247, 275);
+            this.dgv_usu.TabIndex = 45;
+            this.dgv_usu.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_usu_CellMouseClick);
+            // 
+            // cmb_estado
+            // 
+            this.cmb_estado.FormattingEnabled = true;
+            this.cmb_estado.Location = new System.Drawing.Point(220, 398);
+            this.cmb_estado.Name = "cmb_estado";
+            this.cmb_estado.Size = new System.Drawing.Size(121, 26);
+            this.cmb_estado.TabIndex = 44;
+            // 
+            // cmb_rol
+            // 
+            this.cmb_rol.FormattingEnabled = true;
+            this.cmb_rol.Location = new System.Drawing.Point(220, 363);
+            this.cmb_rol.Name = "cmb_rol";
+            this.cmb_rol.Size = new System.Drawing.Size(121, 26);
+            this.cmb_rol.TabIndex = 43;
             // 
             // label12
             // 
@@ -155,18 +182,6 @@ namespace HELADERIA_CA
             this.button1.Text = "Regresar";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // dgv_usuario
-            // 
-            this.dgv_usuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_usuario.Location = new System.Drawing.Point(41, 483);
-            this.dgv_usuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dgv_usuario.Name = "dgv_usuario";
-            this.dgv_usuario.RowHeadersWidth = 51;
-            this.dgv_usuario.RowTemplate.Height = 24;
-            this.dgv_usuario.Size = new System.Drawing.Size(1225, 269);
-            this.dgv_usuario.TabIndex = 0;
-            this.dgv_usuario.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_usuario_CellMouseClick);
-            // 
             // txt_correo
             // 
             this.txt_correo.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,7 +221,7 @@ namespace HELADERIA_CA
             this.txt_bus.Name = "txt_bus";
             this.txt_bus.Size = new System.Drawing.Size(259, 30);
             this.txt_bus.TabIndex = 35;
-            this.txt_bus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_bus_KeyPress);
+            this.txt_bus.TextChanged += new System.EventHandler(this.txt_bus_TextChanged);
             // 
             // label9
             // 
@@ -414,22 +429,6 @@ namespace HELADERIA_CA
             this.label1.TabIndex = 16;
             this.label1.Text = "CRUD USUARIOS";
             // 
-            // cmb_rol
-            // 
-            this.cmb_rol.FormattingEnabled = true;
-            this.cmb_rol.Location = new System.Drawing.Point(220, 363);
-            this.cmb_rol.Name = "cmb_rol";
-            this.cmb_rol.Size = new System.Drawing.Size(121, 26);
-            this.cmb_rol.TabIndex = 43;
-            // 
-            // cmb_estado
-            // 
-            this.cmb_estado.FormattingEnabled = true;
-            this.cmb_estado.Location = new System.Drawing.Point(220, 398);
-            this.cmb_estado.Name = "cmb_estado";
-            this.cmb_estado.Size = new System.Drawing.Size(121, 26);
-            this.cmb_estado.TabIndex = 44;
-            // 
             // CRUDUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -439,11 +438,12 @@ namespace HELADERIA_CA
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "CRUDUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CRUDUsuario";
             this.Load += new System.EventHandler(this.CRUDUsuario_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_usuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_usu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -477,10 +477,10 @@ namespace HELADERIA_CA
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dgv_usuario;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cmb_estado;
         private System.Windows.Forms.ComboBox cmb_rol;
+        private System.Windows.Forms.DataGridView dgv_usu;
     }
 }

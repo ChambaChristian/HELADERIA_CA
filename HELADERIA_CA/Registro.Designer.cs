@@ -268,6 +268,7 @@ namespace HELADERIA_CA
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Registro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro";
             this.ResumeLayout(false);
             this.PerformLayout();

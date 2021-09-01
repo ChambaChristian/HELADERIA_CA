@@ -9,7 +9,7 @@ using CapaDatos;
 
 namespace CapaNegocios
 {
-    class CN_Productos
+   public class CN_Productos
     {
         private CD_Producto objetoCD = new CD_Producto();
         public DataTable traer_usuario()

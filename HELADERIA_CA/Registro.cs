@@ -43,7 +43,7 @@ namespace HELADERIA_CA
             try
             {
                 con.Open();
-                string query = "insert into Tbl_usuario values(@usu, @nom, @ape, @pass, @ced, @dir, @correo, @num, 'A', 2)";
+                string query = "insert into Tbl_usuario values(@usu, @nom, @ape, @pass, @ced, @dir, @correo, @num, 'A', '2')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@usu", txt_usuario.Text.Trim());
                 cmd.Parameters.AddWithValue("@nom", txt_nombre.Text.Trim());

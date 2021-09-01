@@ -151,6 +151,7 @@ namespace HELADERIA_CA
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "MenuAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuAdmin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

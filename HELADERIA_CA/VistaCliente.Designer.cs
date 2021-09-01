@@ -992,6 +992,7 @@ namespace HELADERIA_CA
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "VistaCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VistaCliente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
