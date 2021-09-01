@@ -25,7 +25,7 @@ namespace HELADERIA_CA
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select * from Tbl_usuario where usu_nomlogin = @nom and usu_estado = 'A'", con);
+                SqlCommand cmd = new SqlCommand("select * from Tbl_usuario where usu_usu = @nom and usu_estado = 'A'", con);
                 cmd.Parameters.AddWithValue("nom", nombre);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();

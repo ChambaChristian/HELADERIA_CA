@@ -68,9 +68,9 @@ namespace HELADERIA_CA
             this.btn_crudu.BackColor = System.Drawing.SystemColors.Info;
             this.btn_crudu.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_crudu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_crudu.Location = new System.Drawing.Point(53, 130);
+            this.btn_crudu.Location = new System.Drawing.Point(29, 130);
             this.btn_crudu.Name = "btn_crudu";
-            this.btn_crudu.Size = new System.Drawing.Size(143, 40);
+            this.btn_crudu.Size = new System.Drawing.Size(196, 40);
             this.btn_crudu.TabIndex = 2;
             this.btn_crudu.Text = "CRUD Usuarios";
             this.btn_crudu.UseVisualStyleBackColor = false;
@@ -81,9 +81,9 @@ namespace HELADERIA_CA
             this.btn_crudp.BackColor = System.Drawing.SystemColors.Info;
             this.btn_crudp.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_crudp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_crudp.Location = new System.Drawing.Point(297, 130);
+            this.btn_crudp.Location = new System.Drawing.Point(269, 130);
             this.btn_crudp.Name = "btn_crudp";
-            this.btn_crudp.Size = new System.Drawing.Size(165, 40);
+            this.btn_crudp.Size = new System.Drawing.Size(210, 40);
             this.btn_crudp.TabIndex = 3;
             this.btn_crudp.Text = "CRUD Productos";
             this.btn_crudp.UseVisualStyleBackColor = false;
