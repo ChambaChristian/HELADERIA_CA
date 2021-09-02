@@ -13,6 +13,7 @@ namespace HELADERIA_CA
 {
     public partial class CRUDUsuario : Form
     {
+        private DataClasses1DataContext dc = new DataClasses1DataContext();
         CN_Usuarios objetoCN = new CN_Usuarios();
         //DECLARAMOS VARIABLES
         private string usu_id = null;
@@ -138,11 +139,7 @@ namespace HELADERIA_CA
         }
 
 
-        private void txt_bus_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
-  
-        }
+    
 
         private void CRUDUsuario_Load(object sender, EventArgs e)
         {
@@ -176,17 +173,19 @@ namespace HELADERIA_CA
             }
         }
 
-        private void txt_bus_TextChanged(object sender, EventArgs e)
+        
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (txt_bus.Text !="")
-            {
-              
-            }
+            this.Hide();
+            new MenuAdmin().ShowDialog();
+            this.Close();
         }
 
-        private void txt_bus_KeyPress_1(object sender, KeyPressEventArgs e)
+        private void txt_bus_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            var query = from c in dc.Tbl_usuario where c.usu_cedula.Contains(txt_bus.Text) || c.usu_nombre.Contains(txt_bus.Text) || c.usu_apellido.Contains(txt_bus.Text) select c;
+            dgv_usu.DataSource = query;
         }
     }
 }

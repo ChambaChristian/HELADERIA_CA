@@ -79,11 +79,11 @@ namespace HELADERIA_CA
             // dgv_producto
             // 
             this.dgv_producto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_producto.Location = new System.Drawing.Point(60, 284);
+            this.dgv_producto.Location = new System.Drawing.Point(91, 284);
             this.dgv_producto.Name = "dgv_producto";
             this.dgv_producto.RowHeadersWidth = 51;
             this.dgv_producto.RowTemplate.Height = 24;
-            this.dgv_producto.Size = new System.Drawing.Size(520, 334);
+            this.dgv_producto.Size = new System.Drawing.Size(478, 334);
             this.dgv_producto.TabIndex = 36;
             this.dgv_producto.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_producto_CellMouseClick);
             // 

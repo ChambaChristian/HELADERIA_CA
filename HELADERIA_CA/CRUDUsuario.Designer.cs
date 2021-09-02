@@ -68,6 +68,7 @@ namespace HELADERIA_CA
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.PaleTurquoise;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.dgv_usu);
@@ -100,26 +101,29 @@ namespace HELADERIA_CA
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-2, 15);
+            this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1323, 813);
+            this.panel1.Size = new System.Drawing.Size(1323, 866);
             this.panel1.TabIndex = 0;
             // 
             // dgv_usu
             // 
             this.dgv_usu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_usu.Location = new System.Drawing.Point(41, 474);
+            this.dgv_usu.Location = new System.Drawing.Point(97, 474);
             this.dgv_usu.Name = "dgv_usu";
             this.dgv_usu.RowHeadersWidth = 51;
             this.dgv_usu.RowTemplate.Height = 24;
-            this.dgv_usu.Size = new System.Drawing.Size(1247, 275);
+            this.dgv_usu.Size = new System.Drawing.Size(1099, 275);
             this.dgv_usu.TabIndex = 45;
             this.dgv_usu.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_usu_CellMouseClick);
             // 
             // cmb_estado
             // 
             this.cmb_estado.FormattingEnabled = true;
+            this.cmb_estado.Items.AddRange(new object[] {
+            "A",
+            "I"});
             this.cmb_estado.Location = new System.Drawing.Point(220, 398);
             this.cmb_estado.Name = "cmb_estado";
             this.cmb_estado.Size = new System.Drawing.Size(121, 26);
@@ -128,6 +132,9 @@ namespace HELADERIA_CA
             // cmb_rol
             // 
             this.cmb_rol.FormattingEnabled = true;
+            this.cmb_rol.Items.AddRange(new object[] {
+            "1",
+            "2"});
             this.cmb_rol.Location = new System.Drawing.Point(220, 363);
             this.cmb_rol.Name = "cmb_rol";
             this.cmb_rol.Size = new System.Drawing.Size(121, 26);
@@ -181,6 +188,7 @@ namespace HELADERIA_CA
             this.button1.TabIndex = 39;
             this.button1.Text = "Regresar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_correo
             // 
@@ -221,7 +229,7 @@ namespace HELADERIA_CA
             this.txt_bus.Name = "txt_bus";
             this.txt_bus.Size = new System.Drawing.Size(259, 30);
             this.txt_bus.TabIndex = 35;
-            this.txt_bus.TextChanged += new System.EventHandler(this.txt_bus_TextChanged);
+            this.txt_bus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_bus_KeyPress);
             // 
             // label9
             // 
@@ -433,7 +441,7 @@ namespace HELADERIA_CA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 831);
+            this.ClientSize = new System.Drawing.Size(1298, 861);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);

@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CD_Conexion.cs" />
+    <Compile Include="CD_Factura.cs" />
     <Compile Include="CD_Producto.cs" />
     <Compile Include="CD_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

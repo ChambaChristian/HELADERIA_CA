@@ -33,99 +33,95 @@ namespace HELADERIA_CA
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.trackBar2 = new System.Windows.Forms.TrackBar();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmb_1 = new System.Windows.Forms.ComboBox();
+            this.tb_1 = new System.Windows.Forms.TrackBar();
+            this.tb_2 = new System.Windows.Forms.TrackBar();
+            this.cmb_2 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_2 = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.trackBar3 = new System.Windows.Forms.TrackBar();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.tb_3 = new System.Windows.Forms.TrackBar();
+            this.cmb_3 = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_3 = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.trackBar7 = new System.Windows.Forms.TrackBar();
-            this.label35 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.trackBar4 = new System.Windows.Forms.TrackBar();
+            this.btn_orden = new System.Windows.Forms.Button();
+            this.btn_regre = new System.Windows.Forms.Button();
+            this.btn_salir = new System.Windows.Forms.Button();
+            this.tb_6 = new System.Windows.Forms.TrackBar();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_6 = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.trackBar5 = new System.Windows.Forms.TrackBar();
+            this.tb_5 = new System.Windows.Forms.TrackBar();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_5 = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.trackBar6 = new System.Windows.Forms.TrackBar();
+            this.tb_4 = new System.Windows.Forms.TrackBar();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_4 = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.trackBar8 = new System.Windows.Forms.TrackBar();
+            this.tb_9 = new System.Windows.Forms.TrackBar();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_9 = new System.Windows.Forms.TextBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.trackBar9 = new System.Windows.Forms.TrackBar();
+            this.tb_8 = new System.Windows.Forms.TrackBar();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt_8 = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.trackBar10 = new System.Windows.Forms.TrackBar();
+            this.tb_7 = new System.Windows.Forms.TrackBar();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txt_7 = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.txt_11 = new System.Windows.Forms.TextBox();
+            this.txt_22 = new System.Windows.Forms.TextBox();
+            this.txt_33 = new System.Windows.Forms.TextBox();
+            this.txt_44 = new System.Windows.Forms.TextBox();
+            this.txt_55 = new System.Windows.Forms.TextBox();
+            this.txt_66 = new System.Windows.Forms.TextBox();
+            this.txt_77 = new System.Windows.Forms.TextBox();
+            this.txt_88 = new System.Windows.Forms.TextBox();
+            this.txt_99 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,15 +158,15 @@ namespace HELADERIA_CA
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox2
+            // txt_1
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(125, 392);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(43, 27);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.Text = "0";
+            this.txt_1.Enabled = false;
+            this.txt_1.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_1.Location = new System.Drawing.Point(125, 392);
+            this.txt_1.Name = "txt_1";
+            this.txt_1.Size = new System.Drawing.Size(43, 27);
+            this.txt_1.TabIndex = 7;
+            this.txt_1.Text = "0";
             // 
             // label4
             // 
@@ -212,11 +208,11 @@ namespace HELADERIA_CA
             this.label7.TabIndex = 11;
             this.label7.Text = "Sabor:";
             // 
-            // comboBox1
+            // cmb_1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmb_1.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_1.FormattingEnabled = true;
+            this.cmb_1.Items.AddRange(new object[] {
             "",
             "Vainilla",
             "Chocolate",
@@ -229,30 +225,32 @@ namespace HELADERIA_CA
             "Cerveza",
             "Queso",
             "Aguacate"});
-            this.comboBox1.Location = new System.Drawing.Point(103, 324);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 27);
-            this.comboBox1.TabIndex = 12;
+            this.cmb_1.Location = new System.Drawing.Point(103, 324);
+            this.cmb_1.Name = "cmb_1";
+            this.cmb_1.Size = new System.Drawing.Size(121, 27);
+            this.cmb_1.TabIndex = 12;
             // 
-            // trackBar1
+            // tb_1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(174, 392);
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 56);
-            this.trackBar1.TabIndex = 13;
+            this.tb_1.Location = new System.Drawing.Point(174, 392);
+            this.tb_1.Name = "tb_1";
+            this.tb_1.Size = new System.Drawing.Size(104, 56);
+            this.tb_1.TabIndex = 13;
+            this.tb_1.Scroll += new System.EventHandler(this.tb_1_Scroll);
             // 
-            // trackBar2
+            // tb_2
             // 
-            this.trackBar2.Location = new System.Drawing.Point(482, 392);
-            this.trackBar2.Name = "trackBar2";
-            this.trackBar2.Size = new System.Drawing.Size(104, 56);
-            this.trackBar2.TabIndex = 22;
+            this.tb_2.Location = new System.Drawing.Point(482, 392);
+            this.tb_2.Name = "tb_2";
+            this.tb_2.Size = new System.Drawing.Size(104, 56);
+            this.tb_2.TabIndex = 22;
+            this.tb_2.Scroll += new System.EventHandler(this.tb_2_Scroll);
             // 
-            // comboBox2
+            // cmb_2
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmb_2.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_2.FormattingEnabled = true;
+            this.cmb_2.Items.AddRange(new object[] {
             "Vainilla",
             "Chocolate",
             "Cafe",
@@ -264,10 +262,10 @@ namespace HELADERIA_CA
             "Cerveza",
             "Queso",
             "Aguacate"});
-            this.comboBox2.Location = new System.Drawing.Point(411, 324);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 27);
-            this.comboBox2.TabIndex = 21;
+            this.cmb_2.Location = new System.Drawing.Point(411, 324);
+            this.cmb_2.Name = "cmb_2";
+            this.cmb_2.Size = new System.Drawing.Size(121, 27);
+            this.cmb_2.TabIndex = 21;
             // 
             // label8
             // 
@@ -309,15 +307,15 @@ namespace HELADERIA_CA
             this.label11.TabIndex = 17;
             this.label11.Text = "Precio: ";
             // 
-            // textBox3
+            // txt_2
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(433, 392);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(43, 27);
-            this.textBox3.TabIndex = 16;
-            this.textBox3.Text = "0";
+            this.txt_2.Enabled = false;
+            this.txt_2.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_2.Location = new System.Drawing.Point(433, 392);
+            this.txt_2.Name = "txt_2";
+            this.txt_2.Size = new System.Drawing.Size(43, 27);
+            this.txt_2.TabIndex = 16;
+            this.txt_2.Text = "0";
             // 
             // pictureBox3
             // 
@@ -329,18 +327,19 @@ namespace HELADERIA_CA
             this.pictureBox3.TabIndex = 14;
             this.pictureBox3.TabStop = false;
             // 
-            // trackBar3
+            // tb_3
             // 
-            this.trackBar3.Location = new System.Drawing.Point(799, 392);
-            this.trackBar3.Name = "trackBar3";
-            this.trackBar3.Size = new System.Drawing.Size(104, 56);
-            this.trackBar3.TabIndex = 31;
+            this.tb_3.Location = new System.Drawing.Point(799, 392);
+            this.tb_3.Name = "tb_3";
+            this.tb_3.Size = new System.Drawing.Size(104, 56);
+            this.tb_3.TabIndex = 31;
+            this.tb_3.Scroll += new System.EventHandler(this.tb_3_Scroll);
             // 
-            // comboBox3
+            // cmb_3
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cmb_3.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_3.FormattingEnabled = true;
+            this.cmb_3.Items.AddRange(new object[] {
             "Vainilla",
             "Chocolate",
             "Cafe",
@@ -352,10 +351,10 @@ namespace HELADERIA_CA
             "Cerveza",
             "Queso",
             "Aguacate"});
-            this.comboBox3.Location = new System.Drawing.Point(725, 324);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 27);
-            this.comboBox3.TabIndex = 30;
+            this.cmb_3.Location = new System.Drawing.Point(725, 324);
+            this.cmb_3.Name = "cmb_3";
+            this.cmb_3.Size = new System.Drawing.Size(121, 27);
+            this.cmb_3.TabIndex = 30;
             // 
             // label13
             // 
@@ -397,15 +396,15 @@ namespace HELADERIA_CA
             this.label16.TabIndex = 26;
             this.label16.Text = "Precio: ";
             // 
-            // textBox4
+            // txt_3
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(750, 392);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(43, 27);
-            this.textBox4.TabIndex = 25;
-            this.textBox4.Text = "0";
+            this.txt_3.Enabled = false;
+            this.txt_3.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_3.Location = new System.Drawing.Point(750, 392);
+            this.txt_3.Name = "txt_3";
+            this.txt_3.Size = new System.Drawing.Size(43, 27);
+            this.txt_3.TabIndex = 25;
+            this.txt_3.Text = "0";
             // 
             // pictureBox4
             // 
@@ -417,71 +416,52 @@ namespace HELADERIA_CA
             this.pictureBox4.TabIndex = 23;
             this.pictureBox4.TabStop = false;
             // 
-            // trackBar7
+            // btn_orden
             // 
-            this.trackBar7.Location = new System.Drawing.Point(181, 1077);
-            this.trackBar7.Name = "trackBar7";
-            this.trackBar7.Size = new System.Drawing.Size(104, 56);
-            this.trackBar7.TabIndex = 67;
+            this.btn_orden.BackColor = System.Drawing.Color.Fuchsia;
+            this.btn_orden.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_orden.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_orden.Location = new System.Drawing.Point(411, 1010);
+            this.btn_orden.Name = "btn_orden";
+            this.btn_orden.Size = new System.Drawing.Size(96, 39);
+            this.btn_orden.TabIndex = 95;
+            this.btn_orden.Text = "Ordenar";
+            this.btn_orden.UseVisualStyleBackColor = false;
+            this.btn_orden.Click += new System.EventHandler(this.btn_orden_Click);
             // 
-            // label35
+            // btn_regre
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(58, 1077);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(68, 17);
-            this.label35.TabIndex = 63;
-            this.label35.Text = "Cantidad:";
+            this.btn_regre.BackColor = System.Drawing.Color.Fuchsia;
+            this.btn_regre.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_regre.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_regre.Location = new System.Drawing.Point(33, 1010);
+            this.btn_regre.Name = "btn_regre";
+            this.btn_regre.Size = new System.Drawing.Size(118, 39);
+            this.btn_regre.TabIndex = 96;
+            this.btn_regre.Text = "Regeresar";
+            this.btn_regre.UseVisualStyleBackColor = false;
+            this.btn_regre.Click += new System.EventHandler(this.btn_regre_Click);
             // 
-            // textBox8
+            // btn_salir
             // 
-            this.textBox8.Location = new System.Drawing.Point(132, 1077);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(43, 22);
-            this.textBox8.TabIndex = 61;
+            this.btn_salir.BackColor = System.Drawing.Color.Fuchsia;
+            this.btn_salir.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_salir.Location = new System.Drawing.Point(817, 1005);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(88, 41);
+            this.btn_salir.TabIndex = 97;
+            this.btn_salir.Text = "Salir";
+            this.btn_salir.UseVisualStyleBackColor = false;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
             // 
-            // button1
+            // tb_6
             // 
-            this.button1.BackColor = System.Drawing.Color.Fuchsia;
-            this.button1.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(411, 1010);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 39);
-            this.button1.TabIndex = 95;
-            this.button1.Text = "Ordenar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Fuchsia;
-            this.button2.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(33, 1010);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 39);
-            this.button2.TabIndex = 96;
-            this.button2.Text = "Regeresar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Fuchsia;
-            this.button3.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(817, 1005);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 41);
-            this.button3.TabIndex = 97;
-            this.button3.Text = "Salir";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // trackBar4
-            // 
-            this.trackBar4.Location = new System.Drawing.Point(800, 667);
-            this.trackBar4.Name = "trackBar4";
-            this.trackBar4.Size = new System.Drawing.Size(104, 56);
-            this.trackBar4.TabIndex = 124;
+            this.tb_6.Location = new System.Drawing.Point(800, 667);
+            this.tb_6.Name = "tb_6";
+            this.tb_6.Size = new System.Drawing.Size(104, 56);
+            this.tb_6.TabIndex = 124;
+            this.tb_6.Scroll += new System.EventHandler(this.tb_6_Scroll);
             // 
             // label18
             // 
@@ -513,15 +493,15 @@ namespace HELADERIA_CA
             this.label20.TabIndex = 119;
             this.label20.Text = "Precio: ";
             // 
-            // textBox1
+            // txt_6
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(751, 667);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(43, 27);
-            this.textBox1.TabIndex = 118;
-            this.textBox1.Text = "0";
+            this.txt_6.Enabled = false;
+            this.txt_6.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_6.Location = new System.Drawing.Point(751, 667);
+            this.txt_6.Name = "txt_6";
+            this.txt_6.Size = new System.Drawing.Size(43, 27);
+            this.txt_6.TabIndex = 118;
+            this.txt_6.Text = "0";
             // 
             // pictureBox5
             // 
@@ -533,12 +513,13 @@ namespace HELADERIA_CA
             this.pictureBox5.TabIndex = 116;
             this.pictureBox5.TabStop = false;
             // 
-            // trackBar5
+            // tb_5
             // 
-            this.trackBar5.Location = new System.Drawing.Point(483, 667);
-            this.trackBar5.Name = "trackBar5";
-            this.trackBar5.Size = new System.Drawing.Size(104, 56);
-            this.trackBar5.TabIndex = 115;
+            this.tb_5.Location = new System.Drawing.Point(483, 667);
+            this.tb_5.Name = "tb_5";
+            this.tb_5.Size = new System.Drawing.Size(104, 56);
+            this.tb_5.TabIndex = 115;
+            this.tb_5.Scroll += new System.EventHandler(this.tb_5_Scroll);
             // 
             // label23
             // 
@@ -570,15 +551,15 @@ namespace HELADERIA_CA
             this.label25.TabIndex = 110;
             this.label25.Text = "Precio: ";
             // 
-            // textBox5
+            // txt_5
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(434, 667);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(43, 27);
-            this.textBox5.TabIndex = 109;
-            this.textBox5.Text = "0";
+            this.txt_5.Enabled = false;
+            this.txt_5.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_5.Location = new System.Drawing.Point(434, 667);
+            this.txt_5.Name = "txt_5";
+            this.txt_5.Size = new System.Drawing.Size(43, 27);
+            this.txt_5.TabIndex = 109;
+            this.txt_5.Text = "0";
             // 
             // pictureBox6
             // 
@@ -590,12 +571,13 @@ namespace HELADERIA_CA
             this.pictureBox6.TabIndex = 107;
             this.pictureBox6.TabStop = false;
             // 
-            // trackBar6
+            // tb_4
             // 
-            this.trackBar6.Location = new System.Drawing.Point(175, 667);
-            this.trackBar6.Name = "trackBar6";
-            this.trackBar6.Size = new System.Drawing.Size(104, 56);
-            this.trackBar6.TabIndex = 106;
+            this.tb_4.Location = new System.Drawing.Point(175, 667);
+            this.tb_4.Name = "tb_4";
+            this.tb_4.Size = new System.Drawing.Size(104, 56);
+            this.tb_4.TabIndex = 106;
+            this.tb_4.Scroll += new System.EventHandler(this.tb_4_Scroll);
             // 
             // label28
             // 
@@ -627,15 +609,15 @@ namespace HELADERIA_CA
             this.label30.TabIndex = 101;
             this.label30.Text = "Precio: ";
             // 
-            // textBox6
+            // txt_4
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(126, 667);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(43, 27);
-            this.textBox6.TabIndex = 100;
-            this.textBox6.Text = "0";
+            this.txt_4.Enabled = false;
+            this.txt_4.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_4.Location = new System.Drawing.Point(126, 667);
+            this.txt_4.Name = "txt_4";
+            this.txt_4.Size = new System.Drawing.Size(43, 27);
+            this.txt_4.TabIndex = 100;
+            this.txt_4.Text = "0";
             // 
             // pictureBox7
             // 
@@ -647,12 +629,13 @@ namespace HELADERIA_CA
             this.pictureBox7.TabIndex = 98;
             this.pictureBox7.TabStop = false;
             // 
-            // trackBar8
+            // tb_9
             // 
-            this.trackBar8.Location = new System.Drawing.Point(801, 943);
-            this.trackBar8.Name = "trackBar8";
-            this.trackBar8.Size = new System.Drawing.Size(104, 56);
-            this.trackBar8.TabIndex = 151;
+            this.tb_9.Location = new System.Drawing.Point(801, 943);
+            this.tb_9.Name = "tb_9";
+            this.tb_9.Size = new System.Drawing.Size(104, 56);
+            this.tb_9.TabIndex = 151;
+            this.tb_9.Scroll += new System.EventHandler(this.tb_9_Scroll);
             // 
             // label33
             // 
@@ -684,15 +667,15 @@ namespace HELADERIA_CA
             this.label36.TabIndex = 146;
             this.label36.Text = "Precio: ";
             // 
-            // textBox7
+            // txt_9
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(752, 943);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(43, 27);
-            this.textBox7.TabIndex = 145;
-            this.textBox7.Text = "0";
+            this.txt_9.Enabled = false;
+            this.txt_9.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_9.Location = new System.Drawing.Point(752, 943);
+            this.txt_9.Name = "txt_9";
+            this.txt_9.Size = new System.Drawing.Size(43, 27);
+            this.txt_9.TabIndex = 145;
+            this.txt_9.Text = "0";
             // 
             // pictureBox8
             // 
@@ -704,12 +687,13 @@ namespace HELADERIA_CA
             this.pictureBox8.TabIndex = 143;
             this.pictureBox8.TabStop = false;
             // 
-            // trackBar9
+            // tb_8
             // 
-            this.trackBar9.Location = new System.Drawing.Point(484, 943);
-            this.trackBar9.Name = "trackBar9";
-            this.trackBar9.Size = new System.Drawing.Size(104, 56);
-            this.trackBar9.TabIndex = 142;
+            this.tb_8.Location = new System.Drawing.Point(484, 943);
+            this.tb_8.Name = "tb_8";
+            this.tb_8.Size = new System.Drawing.Size(104, 56);
+            this.tb_8.TabIndex = 142;
+            this.tb_8.Scroll += new System.EventHandler(this.tb_8_Scroll);
             // 
             // label39
             // 
@@ -741,15 +725,15 @@ namespace HELADERIA_CA
             this.label41.TabIndex = 137;
             this.label41.Text = "Precio: ";
             // 
-            // textBox9
+            // txt_8
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(435, 943);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(43, 27);
-            this.textBox9.TabIndex = 136;
-            this.textBox9.Text = "0";
+            this.txt_8.Enabled = false;
+            this.txt_8.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_8.Location = new System.Drawing.Point(435, 943);
+            this.txt_8.Name = "txt_8";
+            this.txt_8.Size = new System.Drawing.Size(43, 27);
+            this.txt_8.TabIndex = 136;
+            this.txt_8.Text = "0";
             // 
             // pictureBox9
             // 
@@ -761,12 +745,13 @@ namespace HELADERIA_CA
             this.pictureBox9.TabIndex = 134;
             this.pictureBox9.TabStop = false;
             // 
-            // trackBar10
+            // tb_7
             // 
-            this.trackBar10.Location = new System.Drawing.Point(176, 945);
-            this.trackBar10.Name = "trackBar10";
-            this.trackBar10.Size = new System.Drawing.Size(104, 56);
-            this.trackBar10.TabIndex = 133;
+            this.tb_7.Location = new System.Drawing.Point(176, 945);
+            this.tb_7.Name = "tb_7";
+            this.tb_7.Size = new System.Drawing.Size(104, 56);
+            this.tb_7.TabIndex = 133;
+            this.tb_7.Scroll += new System.EventHandler(this.tb_7_Scroll);
             // 
             // label44
             // 
@@ -798,15 +783,15 @@ namespace HELADERIA_CA
             this.label46.TabIndex = 128;
             this.label46.Text = "Precio: ";
             // 
-            // textBox10
+            // txt_7
             // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(127, 945);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(43, 27);
-            this.textBox10.TabIndex = 127;
-            this.textBox10.Text = "0";
+            this.txt_7.Enabled = false;
+            this.txt_7.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_7.Location = new System.Drawing.Point(127, 945);
+            this.txt_7.Name = "txt_7";
+            this.txt_7.Size = new System.Drawing.Size(43, 27);
+            this.txt_7.TabIndex = 127;
+            this.txt_7.Text = "0";
             // 
             // pictureBox10
             // 
@@ -818,201 +803,199 @@ namespace HELADERIA_CA
             this.pictureBox10.TabIndex = 125;
             this.pictureBox10.TabStop = false;
             // 
-            // textBox11
+            // txt_11
             // 
-            this.textBox11.Enabled = false;
-            this.textBox11.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(39, 296);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 27);
-            this.textBox11.TabIndex = 152;
-            this.textBox11.Text = "Cono simple";
+            this.txt_11.Enabled = false;
+            this.txt_11.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_11.Location = new System.Drawing.Point(39, 296);
+            this.txt_11.Name = "txt_11";
+            this.txt_11.Size = new System.Drawing.Size(112, 27);
+            this.txt_11.TabIndex = 152;
+            this.txt_11.Text = "Cono simple";
             // 
-            // textBox12
+            // txt_22
             // 
-            this.textBox12.Enabled = false;
-            this.textBox12.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(347, 297);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 27);
-            this.textBox12.TabIndex = 153;
-            this.textBox12.Text = "Cono doble";
+            this.txt_22.Enabled = false;
+            this.txt_22.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_22.Location = new System.Drawing.Point(347, 297);
+            this.txt_22.Name = "txt_22";
+            this.txt_22.Size = new System.Drawing.Size(107, 27);
+            this.txt_22.TabIndex = 153;
+            this.txt_22.Text = "Cono doble";
             // 
-            // textBox13
+            // txt_33
             // 
-            this.textBox13.Enabled = false;
-            this.textBox13.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(662, 296);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 27);
-            this.textBox13.TabIndex = 154;
-            this.textBox13.Text = "Cono triple";
+            this.txt_33.Enabled = false;
+            this.txt_33.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_33.Location = new System.Drawing.Point(662, 296);
+            this.txt_33.Name = "txt_33";
+            this.txt_33.Size = new System.Drawing.Size(100, 27);
+            this.txt_33.TabIndex = 154;
+            this.txt_33.Text = "Cono triple";
             // 
-            // textBox14
+            // txt_44
             // 
-            this.textBox14.Enabled = false;
-            this.textBox14.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(40, 603);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(140, 27);
-            this.textBox14.TabIndex = 155;
-            this.textBox14.Text = "Helado de salcedo";
+            this.txt_44.Enabled = false;
+            this.txt_44.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_44.Location = new System.Drawing.Point(40, 603);
+            this.txt_44.Name = "txt_44";
+            this.txt_44.Size = new System.Drawing.Size(160, 27);
+            this.txt_44.TabIndex = 155;
+            this.txt_44.Text = "Helado de salcedo";
             // 
-            // textBox15
+            // txt_55
             // 
-            this.textBox15.Enabled = false;
-            this.textBox15.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(348, 604);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 27);
-            this.textBox15.TabIndex = 156;
-            this.textBox15.Text = "Helado frito";
+            this.txt_55.Enabled = false;
+            this.txt_55.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_55.Location = new System.Drawing.Point(348, 604);
+            this.txt_55.Name = "txt_55";
+            this.txt_55.Size = new System.Drawing.Size(116, 27);
+            this.txt_55.TabIndex = 156;
+            this.txt_55.Text = "Helado frito";
             // 
-            // textBox16
+            // txt_66
             // 
-            this.textBox16.Enabled = false;
-            this.textBox16.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(663, 603);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 27);
-            this.textBox16.TabIndex = 157;
-            this.textBox16.Text = "Dama blanca";
+            this.txt_66.Enabled = false;
+            this.txt_66.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_66.Location = new System.Drawing.Point(663, 603);
+            this.txt_66.Name = "txt_66";
+            this.txt_66.Size = new System.Drawing.Size(114, 27);
+            this.txt_66.TabIndex = 157;
+            this.txt_66.Text = "Dama blanca";
             // 
-            // textBox17
+            // txt_77
             // 
-            this.textBox17.Enabled = false;
-            this.textBox17.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(40, 881);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(140, 27);
-            this.textBox17.TabIndex = 158;
-            this.textBox17.Text = "Copa africana";
+            this.txt_77.Enabled = false;
+            this.txt_77.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_77.Location = new System.Drawing.Point(40, 881);
+            this.txt_77.Name = "txt_77";
+            this.txt_77.Size = new System.Drawing.Size(140, 27);
+            this.txt_77.TabIndex = 158;
+            this.txt_77.Text = "Copa africana";
             // 
-            // textBox18
+            // txt_88
             // 
-            this.textBox18.Enabled = false;
-            this.textBox18.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(349, 880);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(140, 27);
-            this.textBox18.TabIndex = 159;
-            this.textBox18.Text = "Macedonia";
+            this.txt_88.Enabled = false;
+            this.txt_88.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_88.Location = new System.Drawing.Point(349, 880);
+            this.txt_88.Name = "txt_88";
+            this.txt_88.Size = new System.Drawing.Size(140, 27);
+            this.txt_88.TabIndex = 159;
+            this.txt_88.Text = "Macedonia";
             // 
-            // textBox19
+            // txt_99
             // 
-            this.textBox19.Enabled = false;
-            this.textBox19.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(662, 881);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(140, 27);
-            this.textBox19.TabIndex = 160;
-            this.textBox19.Text = "Banana split";
+            this.txt_99.Enabled = false;
+            this.txt_99.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_99.Location = new System.Drawing.Point(662, 881);
+            this.txt_99.Name = "txt_99";
+            this.txt_99.Size = new System.Drawing.Size(140, 27);
+            this.txt_99.TabIndex = 160;
+            this.txt_99.Text = "Banana split";
             // 
             // VistaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(938, 1055);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.trackBar8);
+            this.Controls.Add(this.txt_99);
+            this.Controls.Add(this.txt_88);
+            this.Controls.Add(this.txt_77);
+            this.Controls.Add(this.txt_66);
+            this.Controls.Add(this.txt_55);
+            this.Controls.Add(this.txt_44);
+            this.Controls.Add(this.txt_33);
+            this.Controls.Add(this.txt_22);
+            this.Controls.Add(this.txt_11);
+            this.Controls.Add(this.tb_9);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.label34);
             this.Controls.Add(this.label36);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txt_9);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.trackBar9);
+            this.Controls.Add(this.tb_8);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.label41);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txt_8);
             this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.trackBar10);
+            this.Controls.Add(this.tb_7);
             this.Controls.Add(this.label44);
             this.Controls.Add(this.label45);
             this.Controls.Add(this.label46);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txt_7);
             this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.trackBar4);
+            this.Controls.Add(this.tb_6);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_6);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.trackBar5);
+            this.Controls.Add(this.tb_5);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.label25);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txt_5);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.trackBar6);
+            this.Controls.Add(this.tb_4);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.label29);
             this.Controls.Add(this.label30);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txt_4);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.trackBar7);
-            this.Controls.Add(this.label35);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.trackBar3);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.btn_salir);
+            this.Controls.Add(this.btn_regre);
+            this.Controls.Add(this.btn_orden);
+            this.Controls.Add(this.tb_3);
+            this.Controls.Add(this.cmb_3);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_3);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.trackBar2);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.tb_2);
+            this.Controls.Add(this.cmb_2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txt_2);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.trackBar1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.tb_1);
+            this.Controls.Add(this.cmb_1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "VistaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VistaCliente";
+            this.Load += new System.EventHandler(this.VistaCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tb_7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1023,79 +1006,76 @@ namespace HELADERIA_CA
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TrackBar trackBar1;
-        private System.Windows.Forms.TrackBar trackBar2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmb_1;
+        private System.Windows.Forms.TrackBar tb_1;
+        private System.Windows.Forms.TrackBar tb_2;
+        private System.Windows.Forms.ComboBox cmb_2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TrackBar trackBar3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TrackBar tb_3;
+        private System.Windows.Forms.ComboBox cmb_3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TrackBar trackBar7;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TrackBar trackBar4;
+        private System.Windows.Forms.Button btn_orden;
+        private System.Windows.Forms.Button btn_regre;
+        private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.TrackBar tb_6;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_6;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TrackBar trackBar5;
+        private System.Windows.Forms.TrackBar tb_5;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TrackBar trackBar6;
+        private System.Windows.Forms.TrackBar tb_4;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_4;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TrackBar trackBar8;
+        private System.Windows.Forms.TrackBar tb_9;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txt_9;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TrackBar trackBar9;
+        private System.Windows.Forms.TrackBar tb_8;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txt_8;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.TrackBar trackBar10;
+        private System.Windows.Forms.TrackBar tb_7;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txt_7;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox txt_11;
+        private System.Windows.Forms.TextBox txt_22;
+        private System.Windows.Forms.TextBox txt_33;
+        private System.Windows.Forms.TextBox txt_44;
+        private System.Windows.Forms.TextBox txt_55;
+        private System.Windows.Forms.TextBox txt_66;
+        private System.Windows.Forms.TextBox txt_77;
+        private System.Windows.Forms.TextBox txt_88;
+        private System.Windows.Forms.TextBox txt_99;
     }
 }

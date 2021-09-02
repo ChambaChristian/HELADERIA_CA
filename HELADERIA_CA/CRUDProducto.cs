@@ -7,11 +7,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocios;
+using System.Linq;
 
 namespace HELADERIA_CA
 {
     public partial class CRUDProducto : Form
     {
+        private DataClasses1DataContext dc = new DataClasses1DataContext();
         CN_Productos objetoCN = new CN_Productos();
         private string prod_id = null;
         private bool editar = false;
@@ -130,10 +132,16 @@ namespace HELADERIA_CA
 
         private void txt_bus_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-
+            var query = from c in dc.Tbl_producto where c.prod_nombre .Contains(txt_bus.Text) select c;
+            dgv_producto.DataSource = query;
         }
 
         private void dgv_prod_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+           
+        }
+
+        private void dgv_producto_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             if (dgv_producto.SelectedRows.Count > 0)
             {
@@ -149,11 +157,6 @@ namespace HELADERIA_CA
                 MessageBox.Show("Porfavor seleccione una fila");
                 limpiar();
             }
-        }
-
-        private void dgv_producto_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-
         }
     }
 }
