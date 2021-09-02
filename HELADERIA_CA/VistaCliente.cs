@@ -108,9 +108,7 @@ namespace HELADERIA_CA
                 MessageBox.Show("Por favor seleccione un sabor");
             }
             else {
-                this.Hide();
-                new Factura().ShowDialog();
-                this.Close();
+                
             }
             
         }

@@ -34,11 +34,11 @@ namespace HELADERIA_CA
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_factura = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_factura = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@ namespace HELADERIA_CA
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_factura)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,9 +58,9 @@ namespace HELADERIA_CA
             this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Location = new System.Drawing.Point(311, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 55);
+            this.label1.Size = new System.Drawing.Size(149, 55);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Factura";
+            this.label1.Text = "Orden";
             // 
             // label2
             // 
@@ -92,15 +92,16 @@ namespace HELADERIA_CA
             this.label4.TabIndex = 3;
             this.label4.Text = "Nombres Completos:";
             // 
-            // dataGridView1
+            // dgv_factura
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 79);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(719, 150);
-            this.dataGridView1.TabIndex = 4;
+            this.dgv_factura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_factura.Location = new System.Drawing.Point(36, 79);
+            this.dgv_factura.Name = "dgv_factura";
+            this.dgv_factura.RowHeadersWidth = 51;
+            this.dgv_factura.RowTemplate.Height = 24;
+            this.dgv_factura.Size = new System.Drawing.Size(719, 150);
+            this.dgv_factura.TabIndex = 4;
+            this.dgv_factura.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv_factura_CellMouseClick);
             // 
             // label5
             // 
@@ -132,17 +133,17 @@ namespace HELADERIA_CA
             this.label7.TabIndex = 7;
             this.label7.Text = "Direccion:";
             // 
-            // button1
+            // btn_factura
             // 
-            this.button1.BackColor = System.Drawing.Color.Magenta;
-            this.button1.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(321, 456);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 41);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Imprimir";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_factura.BackColor = System.Drawing.Color.Magenta;
+            this.btn_factura.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_factura.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_factura.Location = new System.Drawing.Point(321, 456);
+            this.btn_factura.Name = "btn_factura";
+            this.btn_factura.Size = new System.Drawing.Size(103, 41);
+            this.btn_factura.TabIndex = 8;
+            this.btn_factura.Text = "Facturar";
+            this.btn_factura.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
@@ -155,6 +156,7 @@ namespace HELADERIA_CA
             this.button2.TabIndex = 9;
             this.button2.Text = "Regresar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -224,11 +226,11 @@ namespace HELADERIA_CA
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_factura);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_factura);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -236,7 +238,7 @@ namespace HELADERIA_CA
             this.Name = "Factura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Factura";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_factura)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,11 +250,11 @@ namespace HELADERIA_CA
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_factura;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_factura;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox1;

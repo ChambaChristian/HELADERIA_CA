@@ -19,12 +19,24 @@ namespace HELADERIA_CA
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgv_factura_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new VistaCliente().ShowDialog();
+            this.Close();
         }
     }
 }
