@@ -8,15 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocios;
 
 namespace HELADERIA_CA
 {
     public partial class VistaCliente : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=CHRISTIAN;Initial Catalog=Heladeria_CA;Integrated Security=True");
+        //SqlConnection con = new SqlConnection("Data Source=CHRISTIAN;Initial Catalog=Heladeria_CA;Integrated Security=True");
         
-        
-        
+        private bool editar = false;
+        CN_Factura objetoCN = new CN_Factura();
+
+
         private void facturar()
         {
             float precio1 = 0.50f;
@@ -31,37 +34,54 @@ namespace HELADERIA_CA
             float iva = 0.14f;
             float subtotal = (Convert.ToInt32(txt_1.Text) * precio1) + (Convert.ToInt32(txt_2.Text) * precio2) + (Convert.ToInt32(txt_3.Text) * precio3) + (Convert.ToInt32(txt_4.Text) * precio4) + (Convert.ToInt32(txt_5.Text) * precio5) + (Convert.ToInt32(txt_6.Text) * precio6) + (Convert.ToInt32(txt_7.Text) * precio7) + (Convert.ToInt32(txt_8.Text) * precio8) + (Convert.ToInt32(txt_9.Text) * precio9);
             float total = subtotal * iva;
-            try
-            {
-                con.Open();
-                string query = "insert into Tbl_factura values('', '', '', '', '', @prod1, @saborp1, @prod2, @saborp2, @prod3, @saborp3, @prod4, @prod5, @prod6, @prod7, @prod8, @prod9, @subtotal, @total";
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@prod1", txt_11.Text.Trim());
-                cmd.Parameters.AddWithValue("@saborp1", cmb_1.SelectedValue);
-                cmd.Parameters.AddWithValue("@prod2", txt_22.Text.Trim());
-                cmd.Parameters.AddWithValue("@saborp2", cmb_2.SelectedValue);
-                cmd.Parameters.AddWithValue("@prod3", txt_33.Text.Trim());
-                cmd.Parameters.AddWithValue("@saborp3", cmb_3.SelectedValue);
-                cmd.Parameters.AddWithValue("@prod4", txt_44.Text.Trim());
-                cmd.Parameters.AddWithValue("@prod5", txt_55.Text.Trim());
-                cmd.Parameters.AddWithValue("@prod6", txt_66.Text.Trim());
-                cmd.Parameters.AddWithValue("@prod7", txt_77.Text.Trim());
-                cmd.Parameters.AddWithValue("@prod8", txt_88.Text.Trim());
-                cmd.Parameters.AddWithValue("@prod9", txt_99.Text.Trim());
-                cmd.Parameters.AddWithValue("@subtotal", subtotal);
-                cmd.Parameters.AddWithValue("@total", total);
 
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Orden generada exitosamente");
-                this.Hide();
-                new Factura().ShowDialog();
-                this.Close();
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Ocurrio un problema, no se pudo registrar su orden");
-                throw;
-            }
+                if (editar == false)
+                {
+                    try
+                    {
+                        objetoCN.insertarF(txt_11.Text, cmb_1.Text, txt_22.Text, cmb_2.Text, txt_33.Text, cmb_3.Text, txt_44.Text, txt_55.Text, txt_66.Text, txt_77.Text, txt_88.Text, txt_99.Text, subtotal, total);
+                        MessageBox.Show("Datos insertados correctamente");
+                        
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("No se guardaron los datos. \nError: " + ex.Message);
+                        throw;
+                    }
+                }
+            
+
+            //try
+            //{
+            //    con.Open();
+            //    string query = "insert into Tbl_factura values('', '', '', '', '', @prod1, @saborp1, @prod2, @saborp2, @prod3, @saborp3, @prod4, @prod5, @prod6, @prod7, @prod8, @prod9, @subtotal, @total";
+            //    SqlCommand cmd = new SqlCommand(query, con);
+            //    cmd.Parameters.AddWithValue("@prod1", txt_11.Text.Trim());
+            //    cmd.Parameters.AddWithValue("@saborp1", cmb_1.SelectedValue);
+            //    cmd.Parameters.AddWithValue("@prod2", txt_22.Text.Trim());
+            //    cmd.Parameters.AddWithValue("@saborp2", cmb_2.SelectedValue);
+            //    cmd.Parameters.AddWithValue("@prod3", txt_33.Text.Trim());
+            //    cmd.Parameters.AddWithValue("@saborp3", cmb_3.SelectedValue);
+            //    cmd.Parameters.AddWithValue("@prod4", txt_44.Text.Trim());
+            //    cmd.Parameters.AddWithValue("@prod5", txt_55.Text.Trim());
+            //    cmd.Parameters.AddWithValue("@prod6", txt_66.Text.Trim());
+            //    cmd.Parameters.AddWithValue("@prod7", txt_77.Text.Trim());
+            //    cmd.Parameters.AddWithValue("@prod8", txt_88.Text.Trim());
+            //    cmd.Parameters.AddWithValue("@prod9", txt_99.Text.Trim());
+            //    cmd.Parameters.AddWithValue("@subtotal", subtotal);
+            //    cmd.Parameters.AddWithValue("@total", total);
+
+            //    cmd.ExecuteNonQuery();
+            //    MessageBox.Show("Orden generada exitosamente");
+            //    this.Hide();
+            //    new Factura().ShowDialog();
+            //    this.Close();
+            //}
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Ocurrio un problema, no se pudo registrar su orden");
+            //    throw;
+            //}
         }
         
         public VistaCliente()
@@ -108,7 +128,7 @@ namespace HELADERIA_CA
                 MessageBox.Show("Por favor seleccione un sabor");
             }
             else {
-                
+                facturar();
             }
             
         }

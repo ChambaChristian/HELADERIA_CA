@@ -41,11 +41,11 @@ namespace HELADERIA_CA
             this.btn_factura = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_cedula = new System.Windows.Forms.TextBox();
+            this.txt_nombres = new System.Windows.Forms.TextBox();
+            this.txt_numero = new System.Windows.Forms.TextBox();
+            this.txt_correo = new System.Windows.Forms.TextBox();
+            this.txt_direccion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_factura)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,6 +144,7 @@ namespace HELADERIA_CA
             this.btn_factura.TabIndex = 8;
             this.btn_factura.Text = "Facturar";
             this.btn_factura.UseVisualStyleBackColor = false;
+            this.btn_factura.Click += new System.EventHandler(this.btn_factura_Click);
             // 
             // button2
             // 
@@ -171,46 +172,46 @@ namespace HELADERIA_CA
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox1
+            // txt_cedula
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(219, 243);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 30);
-            this.textBox1.TabIndex = 11;
+            this.txt_cedula.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cedula.Location = new System.Drawing.Point(219, 243);
+            this.txt_cedula.Name = "txt_cedula";
+            this.txt_cedula.Size = new System.Drawing.Size(178, 30);
+            this.txt_cedula.TabIndex = 11;
             // 
-            // textBox2
+            // txt_nombres
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(219, 282);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 30);
-            this.textBox2.TabIndex = 12;
+            this.txt_nombres.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombres.Location = new System.Drawing.Point(219, 282);
+            this.txt_nombres.Name = "txt_nombres";
+            this.txt_nombres.Size = new System.Drawing.Size(178, 30);
+            this.txt_nombres.TabIndex = 12;
             // 
-            // textBox3
+            // txt_numero
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(219, 321);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(178, 30);
-            this.textBox3.TabIndex = 13;
+            this.txt_numero.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_numero.Location = new System.Drawing.Point(219, 321);
+            this.txt_numero.Name = "txt_numero";
+            this.txt_numero.Size = new System.Drawing.Size(178, 30);
+            this.txt_numero.TabIndex = 13;
             // 
-            // textBox4
+            // txt_correo
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(219, 361);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(178, 30);
-            this.textBox4.TabIndex = 14;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txt_correo.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_correo.Location = new System.Drawing.Point(219, 361);
+            this.txt_correo.Name = "txt_correo";
+            this.txt_correo.Size = new System.Drawing.Size(178, 30);
+            this.txt_correo.TabIndex = 14;
+            this.txt_correo.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox5
+            // txt_direccion
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(219, 401);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(178, 30);
-            this.textBox5.TabIndex = 15;
+            this.txt_direccion.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_direccion.Location = new System.Drawing.Point(219, 401);
+            this.txt_direccion.Name = "txt_direccion";
+            this.txt_direccion.Size = new System.Drawing.Size(178, 30);
+            this.txt_direccion.TabIndex = 15;
             // 
             // Factura
             // 
@@ -219,11 +220,11 @@ namespace HELADERIA_CA
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 509);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_direccion);
+            this.Controls.Add(this.txt_correo);
+            this.Controls.Add(this.txt_numero);
+            this.Controls.Add(this.txt_nombres);
+            this.Controls.Add(this.txt_cedula);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_factura);
@@ -238,6 +239,7 @@ namespace HELADERIA_CA
             this.Name = "Factura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Factura";
+            this.Load += new System.EventHandler(this.Factura_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_factura)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -257,10 +259,10 @@ namespace HELADERIA_CA
         private System.Windows.Forms.Button btn_factura;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_cedula;
+        private System.Windows.Forms.TextBox txt_nombres;
+        private System.Windows.Forms.TextBox txt_numero;
+        private System.Windows.Forms.TextBox txt_correo;
+        private System.Windows.Forms.TextBox txt_direccion;
     }
 }
