@@ -163,5 +163,10 @@ namespace HELADERIA_CA
         {
 
         }
+
+        private void s_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

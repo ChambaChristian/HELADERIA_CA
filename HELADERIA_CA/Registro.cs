@@ -76,8 +76,12 @@ namespace HELADERIA_CA
                 registrar_registro();
             }
             }
-           
+
+        private void Registro_Load(object sender, EventArgs e)
+        {
+
         }
+    }
     
 }
 

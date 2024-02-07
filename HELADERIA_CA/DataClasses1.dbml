@@ -1,28 +1,20 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Heladeria_CA" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Heladeria_CA" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=CHRISTIAN;Initial Catalog=Heladeria_CA;Integrated Security=True" SettingsObjectName="HELADERIA_CA.Properties.Settings" SettingsPropertyName="Heladeria_CAConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Tbl_DetalleFactura" Member="Tbl_DetalleFactura">
+    <Type Name="Tbl_DetalleFactura">
+      <Column Name="detalle_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="factura_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="prod_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="prod_precio" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_factura_Tbl_DetalleFactura" Member="Tbl_factura" ThisKey="factura_id" OtherKey="factura_id" Type="Tbl_factura" IsForeignKey="true" />
+      <Association Name="Tbl_producto_Tbl_DetalleFactura" Member="Tbl_producto" ThisKey="prod_id" OtherKey="prod_id" Type="Tbl_producto" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Tbl_factura" Member="Tbl_factura">
     <Type Name="Tbl_factura">
-      <Column Name="fac_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="fac_cedula" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_nombres" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_correo" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_numero" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_direccion" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_prod1" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_saborp1" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_prod2" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_saborp2" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_prod3" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_saborp3" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_prod4" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_prod5" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_prod6" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_prod7" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_prod8" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_prod9" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="fac_subtotal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="fac_iva" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="fac_total" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="factura_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Tbl_factura_Tbl_DetalleFactura" Member="Tbl_DetalleFactura" ThisKey="factura_id" OtherKey="factura_id" Type="Tbl_DetalleFactura" />
     </Type>
   </Table>
   <Table Name="dbo.Tbl_producto" Member="Tbl_producto">
@@ -31,6 +23,11 @@
       <Column Name="prod_codigo" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="prod_nombre" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
       <Column Name="prod_precio" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="prod_stock" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sabor_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prod_imagen" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Tbl_producto_Tbl_DetalleFactura" Member="Tbl_DetalleFactura" ThisKey="prod_id" OtherKey="prod_id" Type="Tbl_DetalleFactura" />
+      <Association Name="Tbl_sabor_Tbl_producto" Member="Tbl_sabor" ThisKey="sabor_id" OtherKey="sabor_id" Type="Tbl_sabor" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.Tbl_rol" Member="Tbl_rol">
@@ -38,6 +35,19 @@
       <Column Name="rol_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="rol_tipo" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
       <Association Name="Tbl_rol_Tbl_usuario" Member="Tbl_usuario" ThisKey="rol_id" OtherKey="roles_id" Type="Tbl_usuario" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_sabor" Member="Tbl_sabor">
+    <Type Name="Tbl_sabor">
+      <Column Name="sabor_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="sabor_des" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Tbl_sabor_Tbl_producto" Member="Tbl_producto" ThisKey="sabor_id" OtherKey="sabor_id" Type="Tbl_producto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tbl_tipo_pago" Member="Tbl_tipo_pago">
+    <Type Name="Tbl_tipo_pago">
+      <Column Name="tipo_pago_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tipo_pago_des" Type="System.String" DbType="NChar(40)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Tbl_usuario" Member="Tbl_usuario">

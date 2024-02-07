@@ -23,13 +23,16 @@ namespace HELADERIA_CA
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Heladeria_CA")]
-	public partial class DataClasses1DataContext : System.Data.Linq.DataContext
+	public partial class DataClasses2DataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnCreated();
+    partial void InsertTbl_DetalleFactura(Tbl_DetalleFactura instance);
+    partial void UpdateTbl_DetalleFactura(Tbl_DetalleFactura instance);
+    partial void DeleteTbl_DetalleFactura(Tbl_DetalleFactura instance);
     partial void InsertTbl_factura(Tbl_factura instance);
     partial void UpdateTbl_factura(Tbl_factura instance);
     partial void DeleteTbl_factura(Tbl_factura instance);
@@ -39,39 +42,53 @@ namespace HELADERIA_CA
     partial void InsertTbl_rol(Tbl_rol instance);
     partial void UpdateTbl_rol(Tbl_rol instance);
     partial void DeleteTbl_rol(Tbl_rol instance);
+    partial void InsertTbl_sabor(Tbl_sabor instance);
+    partial void UpdateTbl_sabor(Tbl_sabor instance);
+    partial void DeleteTbl_sabor(Tbl_sabor instance);
+    partial void InsertTbl_tipo_pago(Tbl_tipo_pago instance);
+    partial void UpdateTbl_tipo_pago(Tbl_tipo_pago instance);
+    partial void DeleteTbl_tipo_pago(Tbl_tipo_pago instance);
     partial void InsertTbl_usuario(Tbl_usuario instance);
     partial void UpdateTbl_usuario(Tbl_usuario instance);
     partial void DeleteTbl_usuario(Tbl_usuario instance);
     #endregion
 		
-		public DataClasses1DataContext() : 
+		public DataClasses2DataContext() : 
 				base(global::HELADERIA_CA.Properties.Settings.Default.Heladeria_CAConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(string connection) : 
+		public DataClasses2DataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(System.Data.IDbConnection connection) : 
+		public DataClasses2DataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataClasses2DataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataClasses2DataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
+		}
+		
+		public System.Data.Linq.Table<Tbl_DetalleFactura> Tbl_DetalleFactura
+		{
+			get
+			{
+				return this.GetTable<Tbl_DetalleFactura>();
+			}
 		}
 		
 		public System.Data.Linq.Table<Tbl_factura> Tbl_factura
@@ -98,6 +115,22 @@ namespace HELADERIA_CA
 			}
 		}
 		
+		public System.Data.Linq.Table<Tbl_sabor> Tbl_sabor
+		{
+			get
+			{
+				return this.GetTable<Tbl_sabor>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Tbl_tipo_pago> Tbl_tipo_pago
+		{
+			get
+			{
+				return this.GetTable<Tbl_tipo_pago>();
+			}
+		}
+		
 		public System.Data.Linq.Table<Tbl_usuario> Tbl_usuario
 		{
 			get
@@ -107,523 +140,221 @@ namespace HELADERIA_CA
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Tbl_factura")]
-	public partial class Tbl_factura : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Tbl_DetalleFactura")]
+	public partial class Tbl_DetalleFactura : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _fac_id;
+		private int _detalle_id;
 		
-		private string _fac_cedula;
+		private int _factura_id;
 		
-		private string _fac_nombres;
+		private int _prod_id;
 		
-		private string _fac_correo;
+		private int _cantidad;
 		
-		private string _fac_numero;
+		private double _prod_precio;
 		
-		private string _fac_direccion;
+		private EntityRef<Tbl_factura> _Tbl_factura;
 		
-		private string _fac_prod1;
-		
-		private string _fac_saborp1;
-		
-		private string _fac_prod2;
-		
-		private string _fac_saborp2;
-		
-		private string _fac_prod3;
-		
-		private string _fac_saborp3;
-		
-		private string _fac_prod4;
-		
-		private string _fac_prod5;
-		
-		private string _fac_prod6;
-		
-		private string _fac_prod7;
-		
-		private string _fac_prod8;
-		
-		private string _fac_prod9;
-		
-		private double _fac_subtotal;
-		
-		private double _fac_iva;
-		
-		private double _fac_total;
+		private EntityRef<Tbl_producto> _Tbl_producto;
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void Onfac_idChanging(int value);
-    partial void Onfac_idChanged();
-    partial void Onfac_cedulaChanging(string value);
-    partial void Onfac_cedulaChanged();
-    partial void Onfac_nombresChanging(string value);
-    partial void Onfac_nombresChanged();
-    partial void Onfac_correoChanging(string value);
-    partial void Onfac_correoChanged();
-    partial void Onfac_numeroChanging(string value);
-    partial void Onfac_numeroChanged();
-    partial void Onfac_direccionChanging(string value);
-    partial void Onfac_direccionChanged();
-    partial void Onfac_prod1Changing(string value);
-    partial void Onfac_prod1Changed();
-    partial void Onfac_saborp1Changing(string value);
-    partial void Onfac_saborp1Changed();
-    partial void Onfac_prod2Changing(string value);
-    partial void Onfac_prod2Changed();
-    partial void Onfac_saborp2Changing(string value);
-    partial void Onfac_saborp2Changed();
-    partial void Onfac_prod3Changing(string value);
-    partial void Onfac_prod3Changed();
-    partial void Onfac_saborp3Changing(string value);
-    partial void Onfac_saborp3Changed();
-    partial void Onfac_prod4Changing(string value);
-    partial void Onfac_prod4Changed();
-    partial void Onfac_prod5Changing(string value);
-    partial void Onfac_prod5Changed();
-    partial void Onfac_prod6Changing(string value);
-    partial void Onfac_prod6Changed();
-    partial void Onfac_prod7Changing(string value);
-    partial void Onfac_prod7Changed();
-    partial void Onfac_prod8Changing(string value);
-    partial void Onfac_prod8Changed();
-    partial void Onfac_prod9Changing(string value);
-    partial void Onfac_prod9Changed();
-    partial void Onfac_subtotalChanging(double value);
-    partial void Onfac_subtotalChanged();
-    partial void Onfac_ivaChanging(double value);
-    partial void Onfac_ivaChanged();
-    partial void Onfac_totalChanging(double value);
-    partial void Onfac_totalChanged();
+    partial void Ondetalle_idChanging(int value);
+    partial void Ondetalle_idChanged();
+    partial void Onfactura_idChanging(int value);
+    partial void Onfactura_idChanged();
+    partial void Onprod_idChanging(int value);
+    partial void Onprod_idChanged();
+    partial void OncantidadChanging(int value);
+    partial void OncantidadChanged();
+    partial void Onprod_precioChanging(double value);
+    partial void Onprod_precioChanged();
     #endregion
 		
-		public Tbl_factura()
+		public Tbl_DetalleFactura()
 		{
+			this._Tbl_factura = default(EntityRef<Tbl_factura>);
+			this._Tbl_producto = default(EntityRef<Tbl_producto>);
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int fac_id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_detalle_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int detalle_id
 		{
 			get
 			{
-				return this._fac_id;
+				return this._detalle_id;
 			}
 			set
 			{
-				if ((this._fac_id != value))
+				if ((this._detalle_id != value))
 				{
-					this.Onfac_idChanging(value);
+					this.Ondetalle_idChanging(value);
 					this.SendPropertyChanging();
-					this._fac_id = value;
-					this.SendPropertyChanged("fac_id");
-					this.Onfac_idChanged();
+					this._detalle_id = value;
+					this.SendPropertyChanged("detalle_id");
+					this.Ondetalle_idChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_cedula", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
-		public string fac_cedula
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_factura_id", DbType="Int NOT NULL")]
+		public int factura_id
 		{
 			get
 			{
-				return this._fac_cedula;
+				return this._factura_id;
 			}
 			set
 			{
-				if ((this._fac_cedula != value))
+				if ((this._factura_id != value))
 				{
-					this.Onfac_cedulaChanging(value);
+					if (this._Tbl_factura.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onfactura_idChanging(value);
 					this.SendPropertyChanging();
-					this._fac_cedula = value;
-					this.SendPropertyChanged("fac_cedula");
-					this.Onfac_cedulaChanged();
+					this._factura_id = value;
+					this.SendPropertyChanged("factura_id");
+					this.Onfactura_idChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_nombres", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
-		public string fac_nombres
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_prod_id", DbType="Int NOT NULL")]
+		public int prod_id
 		{
 			get
 			{
-				return this._fac_nombres;
+				return this._prod_id;
 			}
 			set
 			{
-				if ((this._fac_nombres != value))
+				if ((this._prod_id != value))
 				{
-					this.Onfac_nombresChanging(value);
+					if (this._Tbl_producto.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onprod_idChanging(value);
 					this.SendPropertyChanging();
-					this._fac_nombres = value;
-					this.SendPropertyChanged("fac_nombres");
-					this.Onfac_nombresChanged();
+					this._prod_id = value;
+					this.SendPropertyChanged("prod_id");
+					this.Onprod_idChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_correo", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
-		public string fac_correo
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_cantidad", DbType="Int NOT NULL")]
+		public int cantidad
 		{
 			get
 			{
-				return this._fac_correo;
+				return this._cantidad;
 			}
 			set
 			{
-				if ((this._fac_correo != value))
+				if ((this._cantidad != value))
 				{
-					this.Onfac_correoChanging(value);
+					this.OncantidadChanging(value);
 					this.SendPropertyChanging();
-					this._fac_correo = value;
-					this.SendPropertyChanged("fac_correo");
-					this.Onfac_correoChanged();
+					this._cantidad = value;
+					this.SendPropertyChanged("cantidad");
+					this.OncantidadChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_numero", DbType="VarChar(10) NOT NULL", CanBeNull=false)]
-		public string fac_numero
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_prod_precio", DbType="Float NOT NULL")]
+		public double prod_precio
 		{
 			get
 			{
-				return this._fac_numero;
+				return this._prod_precio;
 			}
 			set
 			{
-				if ((this._fac_numero != value))
+				if ((this._prod_precio != value))
 				{
-					this.Onfac_numeroChanging(value);
+					this.Onprod_precioChanging(value);
 					this.SendPropertyChanging();
-					this._fac_numero = value;
-					this.SendPropertyChanged("fac_numero");
-					this.Onfac_numeroChanged();
+					this._prod_precio = value;
+					this.SendPropertyChanged("prod_precio");
+					this.Onprod_precioChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_direccion", DbType="VarChar(150) NOT NULL", CanBeNull=false)]
-		public string fac_direccion
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tbl_factura_Tbl_DetalleFactura", Storage="_Tbl_factura", ThisKey="factura_id", OtherKey="factura_id", IsForeignKey=true)]
+		public Tbl_factura Tbl_factura
 		{
 			get
 			{
-				return this._fac_direccion;
+				return this._Tbl_factura.Entity;
 			}
 			set
 			{
-				if ((this._fac_direccion != value))
+				Tbl_factura previousValue = this._Tbl_factura.Entity;
+				if (((previousValue != value) 
+							|| (this._Tbl_factura.HasLoadedOrAssignedValue == false)))
 				{
-					this.Onfac_direccionChanging(value);
 					this.SendPropertyChanging();
-					this._fac_direccion = value;
-					this.SendPropertyChanged("fac_direccion");
-					this.Onfac_direccionChanged();
+					if ((previousValue != null))
+					{
+						this._Tbl_factura.Entity = null;
+						previousValue.Tbl_DetalleFactura.Remove(this);
+					}
+					this._Tbl_factura.Entity = value;
+					if ((value != null))
+					{
+						value.Tbl_DetalleFactura.Add(this);
+						this._factura_id = value.factura_id;
+					}
+					else
+					{
+						this._factura_id = default(int);
+					}
+					this.SendPropertyChanged("Tbl_factura");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_prod1", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string fac_prod1
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tbl_producto_Tbl_DetalleFactura", Storage="_Tbl_producto", ThisKey="prod_id", OtherKey="prod_id", IsForeignKey=true)]
+		public Tbl_producto Tbl_producto
 		{
 			get
 			{
-				return this._fac_prod1;
+				return this._Tbl_producto.Entity;
 			}
 			set
 			{
-				if ((this._fac_prod1 != value))
+				Tbl_producto previousValue = this._Tbl_producto.Entity;
+				if (((previousValue != value) 
+							|| (this._Tbl_producto.HasLoadedOrAssignedValue == false)))
 				{
-					this.Onfac_prod1Changing(value);
 					this.SendPropertyChanging();
-					this._fac_prod1 = value;
-					this.SendPropertyChanged("fac_prod1");
-					this.Onfac_prod1Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_saborp1", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string fac_saborp1
-		{
-			get
-			{
-				return this._fac_saborp1;
-			}
-			set
-			{
-				if ((this._fac_saborp1 != value))
-				{
-					this.Onfac_saborp1Changing(value);
-					this.SendPropertyChanging();
-					this._fac_saborp1 = value;
-					this.SendPropertyChanged("fac_saborp1");
-					this.Onfac_saborp1Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_prod2", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string fac_prod2
-		{
-			get
-			{
-				return this._fac_prod2;
-			}
-			set
-			{
-				if ((this._fac_prod2 != value))
-				{
-					this.Onfac_prod2Changing(value);
-					this.SendPropertyChanging();
-					this._fac_prod2 = value;
-					this.SendPropertyChanged("fac_prod2");
-					this.Onfac_prod2Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_saborp2", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string fac_saborp2
-		{
-			get
-			{
-				return this._fac_saborp2;
-			}
-			set
-			{
-				if ((this._fac_saborp2 != value))
-				{
-					this.Onfac_saborp2Changing(value);
-					this.SendPropertyChanging();
-					this._fac_saborp2 = value;
-					this.SendPropertyChanged("fac_saborp2");
-					this.Onfac_saborp2Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_prod3", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string fac_prod3
-		{
-			get
-			{
-				return this._fac_prod3;
-			}
-			set
-			{
-				if ((this._fac_prod3 != value))
-				{
-					this.Onfac_prod3Changing(value);
-					this.SendPropertyChanging();
-					this._fac_prod3 = value;
-					this.SendPropertyChanged("fac_prod3");
-					this.Onfac_prod3Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_saborp3", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
-		public string fac_saborp3
-		{
-			get
-			{
-				return this._fac_saborp3;
-			}
-			set
-			{
-				if ((this._fac_saborp3 != value))
-				{
-					this.Onfac_saborp3Changing(value);
-					this.SendPropertyChanging();
-					this._fac_saborp3 = value;
-					this.SendPropertyChanged("fac_saborp3");
-					this.Onfac_saborp3Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_prod4", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string fac_prod4
-		{
-			get
-			{
-				return this._fac_prod4;
-			}
-			set
-			{
-				if ((this._fac_prod4 != value))
-				{
-					this.Onfac_prod4Changing(value);
-					this.SendPropertyChanging();
-					this._fac_prod4 = value;
-					this.SendPropertyChanged("fac_prod4");
-					this.Onfac_prod4Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_prod5", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string fac_prod5
-		{
-			get
-			{
-				return this._fac_prod5;
-			}
-			set
-			{
-				if ((this._fac_prod5 != value))
-				{
-					this.Onfac_prod5Changing(value);
-					this.SendPropertyChanging();
-					this._fac_prod5 = value;
-					this.SendPropertyChanged("fac_prod5");
-					this.Onfac_prod5Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_prod6", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string fac_prod6
-		{
-			get
-			{
-				return this._fac_prod6;
-			}
-			set
-			{
-				if ((this._fac_prod6 != value))
-				{
-					this.Onfac_prod6Changing(value);
-					this.SendPropertyChanging();
-					this._fac_prod6 = value;
-					this.SendPropertyChanged("fac_prod6");
-					this.Onfac_prod6Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_prod7", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string fac_prod7
-		{
-			get
-			{
-				return this._fac_prod7;
-			}
-			set
-			{
-				if ((this._fac_prod7 != value))
-				{
-					this.Onfac_prod7Changing(value);
-					this.SendPropertyChanging();
-					this._fac_prod7 = value;
-					this.SendPropertyChanged("fac_prod7");
-					this.Onfac_prod7Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_prod8", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string fac_prod8
-		{
-			get
-			{
-				return this._fac_prod8;
-			}
-			set
-			{
-				if ((this._fac_prod8 != value))
-				{
-					this.Onfac_prod8Changing(value);
-					this.SendPropertyChanging();
-					this._fac_prod8 = value;
-					this.SendPropertyChanged("fac_prod8");
-					this.Onfac_prod8Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_prod9", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
-		public string fac_prod9
-		{
-			get
-			{
-				return this._fac_prod9;
-			}
-			set
-			{
-				if ((this._fac_prod9 != value))
-				{
-					this.Onfac_prod9Changing(value);
-					this.SendPropertyChanging();
-					this._fac_prod9 = value;
-					this.SendPropertyChanged("fac_prod9");
-					this.Onfac_prod9Changed();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_subtotal", DbType="Float NOT NULL")]
-		public double fac_subtotal
-		{
-			get
-			{
-				return this._fac_subtotal;
-			}
-			set
-			{
-				if ((this._fac_subtotal != value))
-				{
-					this.Onfac_subtotalChanging(value);
-					this.SendPropertyChanging();
-					this._fac_subtotal = value;
-					this.SendPropertyChanged("fac_subtotal");
-					this.Onfac_subtotalChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_iva", DbType="Float NOT NULL")]
-		public double fac_iva
-		{
-			get
-			{
-				return this._fac_iva;
-			}
-			set
-			{
-				if ((this._fac_iva != value))
-				{
-					this.Onfac_ivaChanging(value);
-					this.SendPropertyChanging();
-					this._fac_iva = value;
-					this.SendPropertyChanged("fac_iva");
-					this.Onfac_ivaChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fac_total", DbType="Float NOT NULL")]
-		public double fac_total
-		{
-			get
-			{
-				return this._fac_total;
-			}
-			set
-			{
-				if ((this._fac_total != value))
-				{
-					this.Onfac_totalChanging(value);
-					this.SendPropertyChanging();
-					this._fac_total = value;
-					this.SendPropertyChanged("fac_total");
-					this.Onfac_totalChanged();
+					if ((previousValue != null))
+					{
+						this._Tbl_producto.Entity = null;
+						previousValue.Tbl_DetalleFactura.Remove(this);
+					}
+					this._Tbl_producto.Entity = value;
+					if ((value != null))
+					{
+						value.Tbl_DetalleFactura.Add(this);
+						this._prod_id = value.prod_id;
+					}
+					else
+					{
+						this._prod_id = default(int);
+					}
+					this.SendPropertyChanged("Tbl_producto");
 				}
 			}
 		}
@@ -649,6 +380,96 @@ namespace HELADERIA_CA
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Tbl_factura")]
+	public partial class Tbl_factura : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _factura_id;
+		
+		private EntitySet<Tbl_DetalleFactura> _Tbl_DetalleFactura;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onfactura_idChanging(int value);
+    partial void Onfactura_idChanged();
+    #endregion
+		
+		public Tbl_factura()
+		{
+			this._Tbl_DetalleFactura = new EntitySet<Tbl_DetalleFactura>(new Action<Tbl_DetalleFactura>(this.attach_Tbl_DetalleFactura), new Action<Tbl_DetalleFactura>(this.detach_Tbl_DetalleFactura));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_factura_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int factura_id
+		{
+			get
+			{
+				return this._factura_id;
+			}
+			set
+			{
+				if ((this._factura_id != value))
+				{
+					this.Onfactura_idChanging(value);
+					this.SendPropertyChanging();
+					this._factura_id = value;
+					this.SendPropertyChanged("factura_id");
+					this.Onfactura_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tbl_factura_Tbl_DetalleFactura", Storage="_Tbl_DetalleFactura", ThisKey="factura_id", OtherKey="factura_id")]
+		public EntitySet<Tbl_DetalleFactura> Tbl_DetalleFactura
+		{
+			get
+			{
+				return this._Tbl_DetalleFactura;
+			}
+			set
+			{
+				this._Tbl_DetalleFactura.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Tbl_DetalleFactura(Tbl_DetalleFactura entity)
+		{
+			this.SendPropertyChanging();
+			entity.Tbl_factura = this;
+		}
+		
+		private void detach_Tbl_DetalleFactura(Tbl_DetalleFactura entity)
+		{
+			this.SendPropertyChanging();
+			entity.Tbl_factura = null;
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Tbl_producto")]
 	public partial class Tbl_producto : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -663,6 +484,16 @@ namespace HELADERIA_CA
 		
 		private double _prod_precio;
 		
+		private int _prod_stock;
+		
+		private System.Nullable<int> _sabor_id;
+		
+		private System.Data.Linq.Binary _prod_imagen;
+		
+		private EntitySet<Tbl_DetalleFactura> _Tbl_DetalleFactura;
+		
+		private EntityRef<Tbl_sabor> _Tbl_sabor;
+		
     #region Definiciones de métodos de extensibilidad
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -675,10 +506,18 @@ namespace HELADERIA_CA
     partial void Onprod_nombreChanged();
     partial void Onprod_precioChanging(double value);
     partial void Onprod_precioChanged();
+    partial void Onprod_stockChanging(int value);
+    partial void Onprod_stockChanged();
+    partial void Onsabor_idChanging(System.Nullable<int> value);
+    partial void Onsabor_idChanged();
+    partial void Onprod_imagenChanging(System.Data.Linq.Binary value);
+    partial void Onprod_imagenChanged();
     #endregion
 		
 		public Tbl_producto()
 		{
+			this._Tbl_DetalleFactura = new EntitySet<Tbl_DetalleFactura>(new Action<Tbl_DetalleFactura>(this.attach_Tbl_DetalleFactura), new Action<Tbl_DetalleFactura>(this.detach_Tbl_DetalleFactura));
+			this._Tbl_sabor = default(EntityRef<Tbl_sabor>);
 			OnCreated();
 		}
 		
@@ -762,6 +601,117 @@ namespace HELADERIA_CA
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_prod_stock", DbType="Int NOT NULL")]
+		public int prod_stock
+		{
+			get
+			{
+				return this._prod_stock;
+			}
+			set
+			{
+				if ((this._prod_stock != value))
+				{
+					this.Onprod_stockChanging(value);
+					this.SendPropertyChanging();
+					this._prod_stock = value;
+					this.SendPropertyChanged("prod_stock");
+					this.Onprod_stockChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_sabor_id", DbType="Int")]
+		public System.Nullable<int> sabor_id
+		{
+			get
+			{
+				return this._sabor_id;
+			}
+			set
+			{
+				if ((this._sabor_id != value))
+				{
+					if (this._Tbl_sabor.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onsabor_idChanging(value);
+					this.SendPropertyChanging();
+					this._sabor_id = value;
+					this.SendPropertyChanged("sabor_id");
+					this.Onsabor_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_prod_imagen", DbType="Image", UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary prod_imagen
+		{
+			get
+			{
+				return this._prod_imagen;
+			}
+			set
+			{
+				if ((this._prod_imagen != value))
+				{
+					this.Onprod_imagenChanging(value);
+					this.SendPropertyChanging();
+					this._prod_imagen = value;
+					this.SendPropertyChanged("prod_imagen");
+					this.Onprod_imagenChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tbl_producto_Tbl_DetalleFactura", Storage="_Tbl_DetalleFactura", ThisKey="prod_id", OtherKey="prod_id")]
+		public EntitySet<Tbl_DetalleFactura> Tbl_DetalleFactura
+		{
+			get
+			{
+				return this._Tbl_DetalleFactura;
+			}
+			set
+			{
+				this._Tbl_DetalleFactura.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tbl_sabor_Tbl_producto", Storage="_Tbl_sabor", ThisKey="sabor_id", OtherKey="sabor_id", IsForeignKey=true)]
+		public Tbl_sabor Tbl_sabor
+		{
+			get
+			{
+				return this._Tbl_sabor.Entity;
+			}
+			set
+			{
+				Tbl_sabor previousValue = this._Tbl_sabor.Entity;
+				if (((previousValue != value) 
+							|| (this._Tbl_sabor.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Tbl_sabor.Entity = null;
+						previousValue.Tbl_producto.Remove(this);
+					}
+					this._Tbl_sabor.Entity = value;
+					if ((value != null))
+					{
+						value.Tbl_producto.Add(this);
+						this._sabor_id = value.sabor_id;
+					}
+					else
+					{
+						this._sabor_id = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("Tbl_sabor");
+				}
+			}
+		}
+		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -780,6 +730,18 @@ namespace HELADERIA_CA
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_Tbl_DetalleFactura(Tbl_DetalleFactura entity)
+		{
+			this.SendPropertyChanging();
+			entity.Tbl_producto = this;
+		}
+		
+		private void detach_Tbl_DetalleFactura(Tbl_DetalleFactura entity)
+		{
+			this.SendPropertyChanging();
+			entity.Tbl_producto = null;
 		}
 	}
 	
@@ -894,6 +856,206 @@ namespace HELADERIA_CA
 		{
 			this.SendPropertyChanging();
 			entity.Tbl_rol = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Tbl_sabor")]
+	public partial class Tbl_sabor : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _sabor_id;
+		
+		private string _sabor_des;
+		
+		private EntitySet<Tbl_producto> _Tbl_producto;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Onsabor_idChanging(int value);
+    partial void Onsabor_idChanged();
+    partial void Onsabor_desChanging(string value);
+    partial void Onsabor_desChanged();
+    #endregion
+		
+		public Tbl_sabor()
+		{
+			this._Tbl_producto = new EntitySet<Tbl_producto>(new Action<Tbl_producto>(this.attach_Tbl_producto), new Action<Tbl_producto>(this.detach_Tbl_producto));
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_sabor_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int sabor_id
+		{
+			get
+			{
+				return this._sabor_id;
+			}
+			set
+			{
+				if ((this._sabor_id != value))
+				{
+					this.Onsabor_idChanging(value);
+					this.SendPropertyChanging();
+					this._sabor_id = value;
+					this.SendPropertyChanged("sabor_id");
+					this.Onsabor_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_sabor_des", DbType="NChar(10) NOT NULL", CanBeNull=false)]
+		public string sabor_des
+		{
+			get
+			{
+				return this._sabor_des;
+			}
+			set
+			{
+				if ((this._sabor_des != value))
+				{
+					this.Onsabor_desChanging(value);
+					this.SendPropertyChanging();
+					this._sabor_des = value;
+					this.SendPropertyChanged("sabor_des");
+					this.Onsabor_desChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Tbl_sabor_Tbl_producto", Storage="_Tbl_producto", ThisKey="sabor_id", OtherKey="sabor_id")]
+		public EntitySet<Tbl_producto> Tbl_producto
+		{
+			get
+			{
+				return this._Tbl_producto;
+			}
+			set
+			{
+				this._Tbl_producto.Assign(value);
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+		
+		private void attach_Tbl_producto(Tbl_producto entity)
+		{
+			this.SendPropertyChanging();
+			entity.Tbl_sabor = this;
+		}
+		
+		private void detach_Tbl_producto(Tbl_producto entity)
+		{
+			this.SendPropertyChanging();
+			entity.Tbl_sabor = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Tbl_tipo_pago")]
+	public partial class Tbl_tipo_pago : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _tipo_pago_id;
+		
+		private string _tipo_pago_des;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Ontipo_pago_idChanging(int value);
+    partial void Ontipo_pago_idChanged();
+    partial void Ontipo_pago_desChanging(string value);
+    partial void Ontipo_pago_desChanged();
+    #endregion
+		
+		public Tbl_tipo_pago()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tipo_pago_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int tipo_pago_id
+		{
+			get
+			{
+				return this._tipo_pago_id;
+			}
+			set
+			{
+				if ((this._tipo_pago_id != value))
+				{
+					this.Ontipo_pago_idChanging(value);
+					this.SendPropertyChanging();
+					this._tipo_pago_id = value;
+					this.SendPropertyChanged("tipo_pago_id");
+					this.Ontipo_pago_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tipo_pago_des", DbType="NChar(40)")]
+		public string tipo_pago_des
+		{
+			get
+			{
+				return this._tipo_pago_des;
+			}
+			set
+			{
+				if ((this._tipo_pago_des != value))
+				{
+					this.Ontipo_pago_desChanging(value);
+					this.SendPropertyChanging();
+					this._tipo_pago_des = value;
+					this.SendPropertyChanged("tipo_pago_des");
+					this.Ontipo_pago_desChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 	

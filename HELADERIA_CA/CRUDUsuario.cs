@@ -187,5 +187,10 @@ namespace HELADERIA_CA
             var query = from c in dc.Tbl_usuario where c.usu_cedula.Contains(txt_bus.Text) || c.usu_nombre.Contains(txt_bus.Text) || c.usu_apellido.Contains(txt_bus.Text) select c;
             dgv_usu.DataSource = query;
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

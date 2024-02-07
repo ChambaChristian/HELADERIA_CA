@@ -31,6 +31,12 @@ namespace HELADERIA_CA
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUDProducto));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.s = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cmb_sabor = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_stock = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.dgv_producto = new System.Windows.Forms.DataGridView();
             this.btn_exit = new System.Windows.Forms.Button();
             this.txt_bus = new System.Windows.Forms.TextBox();
@@ -46,12 +52,6 @@ namespace HELADERIA_CA
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txt_stock = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cmb_sabor = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.s = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_producto)).BeginInit();
             this.SuspendLayout();
@@ -88,6 +88,88 @@ namespace HELADERIA_CA
             this.panel1.Size = new System.Drawing.Size(666, 865);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // s
+            // 
+            this.s.BackColor = System.Drawing.Color.LightPink;
+            this.s.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.s.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.s.Location = new System.Drawing.Point(220, 262);
+            this.s.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.s.Name = "s";
+            this.s.Size = new System.Drawing.Size(119, 33);
+            this.s.TabIndex = 42;
+            this.s.Text = "Cargar";
+            this.s.UseVisualStyleBackColor = false;
+            this.s.Click += new System.EventHandler(this.s_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(49, 267);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(75, 22);
+            this.label7.TabIndex = 41;
+            this.label7.Text = "Imagen:";
+            // 
+            // cmb_sabor
+            // 
+            this.cmb_sabor.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_sabor.FormattingEnabled = true;
+            this.cmb_sabor.Items.AddRange(new object[] {
+            "",
+            "Vainilla",
+            "Chocolate",
+            "Cafe",
+            "Limon",
+            "Mora",
+            "Fresa",
+            "Chicle",
+            "Maracuya",
+            "Cerveza",
+            "Queso",
+            "Aguacate"});
+            this.cmb_sabor.Location = new System.Drawing.Point(219, 216);
+            this.cmb_sabor.Name = "cmb_sabor";
+            this.cmb_sabor.Size = new System.Drawing.Size(121, 27);
+            this.cmb_sabor.TabIndex = 40;
+            this.cmb_sabor.Text = "Seleccione";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(49, 216);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 22);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "Sabor:";
+            // 
+            // txt_stock
+            // 
+            this.txt_stock.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_stock.Location = new System.Drawing.Point(219, 174);
+            this.txt_stock.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txt_stock.Name = "txt_stock";
+            this.txt_stock.Size = new System.Drawing.Size(55, 30);
+            this.txt_stock.TabIndex = 38;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(49, 174);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 22);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Stock:";
             // 
             // dgv_producto
             // 
@@ -265,87 +347,6 @@ namespace HELADERIA_CA
             this.label1.Size = new System.Drawing.Size(268, 37);
             this.label1.TabIndex = 16;
             this.label1.Text = "CRUD PRODUCTOS";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(49, 174);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 22);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Stock:";
-            // 
-            // txt_stock
-            // 
-            this.txt_stock.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_stock.Location = new System.Drawing.Point(219, 174);
-            this.txt_stock.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txt_stock.Name = "txt_stock";
-            this.txt_stock.Size = new System.Drawing.Size(55, 30);
-            this.txt_stock.TabIndex = 38;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(49, 216);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 22);
-            this.label6.TabIndex = 39;
-            this.label6.Text = "Sabor:";
-            // 
-            // cmb_sabor
-            // 
-            this.cmb_sabor.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_sabor.FormattingEnabled = true;
-            this.cmb_sabor.Items.AddRange(new object[] {
-            "",
-            "Vainilla",
-            "Chocolate",
-            "Cafe",
-            "Limon",
-            "Mora",
-            "Fresa",
-            "Chicle",
-            "Maracuya",
-            "Cerveza",
-            "Queso",
-            "Aguacate"});
-            this.cmb_sabor.Location = new System.Drawing.Point(219, 216);
-            this.cmb_sabor.Name = "cmb_sabor";
-            this.cmb_sabor.Size = new System.Drawing.Size(121, 27);
-            this.cmb_sabor.TabIndex = 40;
-            this.cmb_sabor.Text = "Seleccione";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(49, 267);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 22);
-            this.label7.TabIndex = 41;
-            this.label7.Text = "Imagen:";
-            // 
-            // s
-            // 
-            this.s.BackColor = System.Drawing.Color.LightPink;
-            this.s.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.s.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.s.Location = new System.Drawing.Point(220, 262);
-            this.s.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.s.Name = "s";
-            this.s.Size = new System.Drawing.Size(119, 33);
-            this.s.TabIndex = 42;
-            this.s.Text = "Cargar";
-            this.s.UseVisualStyleBackColor = false;
             // 
             // CRUDProducto
             // 
