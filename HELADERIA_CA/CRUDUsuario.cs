@@ -192,5 +192,10 @@ namespace HELADERIA_CA
         {
 
         }
+
+        private void txt_bus_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

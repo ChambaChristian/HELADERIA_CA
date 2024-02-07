@@ -132,7 +132,7 @@ namespace HELADERIA_CA
 
         private void txt_bus_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            var query = from c in dc.Tbl_producto where c.prod_nombre .Contains(txt_bus.Text) select c;
+            var query = from c in dc.Tbl_producto where c.prod_nombre .Contains(txt_bus.Text) || c.prod_codigo.Contains(txt_bus.Text) select c;
             dgv_producto.DataSource = query;
         }
 
@@ -165,6 +165,11 @@ namespace HELADERIA_CA
         }
 
         private void s_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_bus_TextChanged(object sender, EventArgs e)
         {
 
         }

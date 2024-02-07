@@ -230,6 +230,7 @@ namespace HELADERIA_CA
             this.txt_bus.Name = "txt_bus";
             this.txt_bus.Size = new System.Drawing.Size(259, 30);
             this.txt_bus.TabIndex = 35;
+            this.txt_bus.TextChanged += new System.EventHandler(this.txt_bus_TextChanged);
             this.txt_bus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_bus_KeyPress);
             // 
             // label9
