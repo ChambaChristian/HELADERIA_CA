@@ -40,22 +40,6 @@ namespace HELADERIA_CA
             this.label7 = new System.Windows.Forms.Label();
             this.cmb_1 = new System.Windows.Forms.ComboBox();
             this.tb_1 = new System.Windows.Forms.TrackBar();
-            this.tb_2 = new System.Windows.Forms.TrackBar();
-            this.cmb_2 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txt_2 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tb_3 = new System.Windows.Forms.TrackBar();
-            this.cmb_3 = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txt_3 = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_orden = new System.Windows.Forms.Button();
             this.btn_regre = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
@@ -96,8 +80,6 @@ namespace HELADERIA_CA
             this.txt_7 = new System.Windows.Forms.TextBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.txt_11 = new System.Windows.Forms.TextBox();
-            this.txt_22 = new System.Windows.Forms.TextBox();
-            this.txt_33 = new System.Windows.Forms.TextBox();
             this.txt_44 = new System.Windows.Forms.TextBox();
             this.txt_55 = new System.Windows.Forms.TextBox();
             this.txt_66 = new System.Windows.Forms.TextBox();
@@ -107,10 +89,6 @@ namespace HELADERIA_CA
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_5)).BeginInit();
@@ -237,184 +215,6 @@ namespace HELADERIA_CA
             this.tb_1.Size = new System.Drawing.Size(104, 56);
             this.tb_1.TabIndex = 13;
             this.tb_1.Scroll += new System.EventHandler(this.tb_1_Scroll);
-            // 
-            // tb_2
-            // 
-            this.tb_2.Location = new System.Drawing.Point(482, 392);
-            this.tb_2.Name = "tb_2";
-            this.tb_2.Size = new System.Drawing.Size(104, 56);
-            this.tb_2.TabIndex = 22;
-            this.tb_2.Scroll += new System.EventHandler(this.tb_2_Scroll);
-            // 
-            // cmb_2
-            // 
-            this.cmb_2.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_2.FormattingEnabled = true;
-            this.cmb_2.Items.AddRange(new object[] {
-            "Vainilla",
-            "Chocolate",
-            "Cafe",
-            "Limon",
-            "Mora",
-            "Fresa",
-            "Chicle",
-            "Maracuya",
-            "Cerveza",
-            "Queso",
-            "Aguacate"});
-            this.cmb_2.Location = new System.Drawing.Point(411, 324);
-            this.cmb_2.Name = "cmb_2";
-            this.cmb_2.Size = new System.Drawing.Size(121, 27);
-            this.cmb_2.TabIndex = 21;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(348, 327);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 19);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Sabor:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(411, 358);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 19);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "1,00";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(348, 392);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 19);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Cantidad:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(348, 358);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 19);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Precio: ";
-            // 
-            // txt_2
-            // 
-            this.txt_2.Enabled = false;
-            this.txt_2.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_2.Location = new System.Drawing.Point(433, 392);
-            this.txt_2.Name = "txt_2";
-            this.txt_2.Size = new System.Drawing.Size(43, 27);
-            this.txt_2.TabIndex = 16;
-            this.txt_2.Text = "0";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(351, 162);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(190, 133);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            // 
-            // tb_3
-            // 
-            this.tb_3.Location = new System.Drawing.Point(799, 392);
-            this.tb_3.Name = "tb_3";
-            this.tb_3.Size = new System.Drawing.Size(104, 56);
-            this.tb_3.TabIndex = 31;
-            this.tb_3.Scroll += new System.EventHandler(this.tb_3_Scroll);
-            // 
-            // cmb_3
-            // 
-            this.cmb_3.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_3.FormattingEnabled = true;
-            this.cmb_3.Items.AddRange(new object[] {
-            "Vainilla",
-            "Chocolate",
-            "Cafe",
-            "Limon",
-            "Mora",
-            "Fresa",
-            "Chicle",
-            "Maracuya",
-            "Cerveza",
-            "Queso",
-            "Aguacate"});
-            this.cmb_3.Location = new System.Drawing.Point(725, 324);
-            this.cmb_3.Name = "cmb_3";
-            this.cmb_3.Size = new System.Drawing.Size(121, 27);
-            this.cmb_3.TabIndex = 30;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(662, 327);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 19);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "Sabor:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(725, 358);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 19);
-            this.label14.TabIndex = 28;
-            this.label14.Text = "1,50";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(662, 392);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(79, 19);
-            this.label15.TabIndex = 27;
-            this.label15.Text = "Cantidad:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(662, 358);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(64, 19);
-            this.label16.TabIndex = 26;
-            this.label16.Text = "Precio: ";
-            // 
-            // txt_3
-            // 
-            this.txt_3.Enabled = false;
-            this.txt_3.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_3.Location = new System.Drawing.Point(750, 392);
-            this.txt_3.Name = "txt_3";
-            this.txt_3.Size = new System.Drawing.Size(43, 27);
-            this.txt_3.TabIndex = 25;
-            this.txt_3.Text = "0";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(665, 162);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(190, 133);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
             // 
             // btn_orden
             // 
@@ -631,7 +431,7 @@ namespace HELADERIA_CA
             // 
             // tb_9
             // 
-            this.tb_9.Location = new System.Drawing.Point(801, 943);
+            this.tb_9.Location = new System.Drawing.Point(796, 359);
             this.tb_9.Name = "tb_9";
             this.tb_9.Size = new System.Drawing.Size(104, 56);
             this.tb_9.TabIndex = 151;
@@ -641,7 +441,7 @@ namespace HELADERIA_CA
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(731, 909);
+            this.label33.Location = new System.Drawing.Point(726, 325);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(46, 19);
             this.label33.TabIndex = 148;
@@ -651,7 +451,7 @@ namespace HELADERIA_CA
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(664, 943);
+            this.label34.Location = new System.Drawing.Point(659, 359);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(79, 19);
             this.label34.TabIndex = 147;
@@ -661,7 +461,7 @@ namespace HELADERIA_CA
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(664, 909);
+            this.label36.Location = new System.Drawing.Point(659, 325);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(64, 19);
             this.label36.TabIndex = 146;
@@ -671,7 +471,7 @@ namespace HELADERIA_CA
             // 
             this.txt_9.Enabled = false;
             this.txt_9.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_9.Location = new System.Drawing.Point(752, 943);
+            this.txt_9.Location = new System.Drawing.Point(747, 359);
             this.txt_9.Name = "txt_9";
             this.txt_9.Size = new System.Drawing.Size(43, 27);
             this.txt_9.TabIndex = 145;
@@ -680,7 +480,7 @@ namespace HELADERIA_CA
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(667, 746);
+            this.pictureBox8.Location = new System.Drawing.Point(662, 162);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(190, 133);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -689,7 +489,7 @@ namespace HELADERIA_CA
             // 
             // tb_8
             // 
-            this.tb_8.Location = new System.Drawing.Point(484, 943);
+            this.tb_8.Location = new System.Drawing.Point(479, 359);
             this.tb_8.Name = "tb_8";
             this.tb_8.Size = new System.Drawing.Size(104, 56);
             this.tb_8.TabIndex = 142;
@@ -699,7 +499,7 @@ namespace HELADERIA_CA
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(418, 909);
+            this.label39.Location = new System.Drawing.Point(413, 325);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(46, 19);
             this.label39.TabIndex = 139;
@@ -709,7 +509,7 @@ namespace HELADERIA_CA
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(350, 943);
+            this.label40.Location = new System.Drawing.Point(345, 359);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(79, 19);
             this.label40.TabIndex = 138;
@@ -719,7 +519,7 @@ namespace HELADERIA_CA
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(350, 909);
+            this.label41.Location = new System.Drawing.Point(345, 325);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(64, 19);
             this.label41.TabIndex = 137;
@@ -729,7 +529,7 @@ namespace HELADERIA_CA
             // 
             this.txt_8.Enabled = false;
             this.txt_8.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_8.Location = new System.Drawing.Point(435, 943);
+            this.txt_8.Location = new System.Drawing.Point(430, 359);
             this.txt_8.Name = "txt_8";
             this.txt_8.Size = new System.Drawing.Size(43, 27);
             this.txt_8.TabIndex = 136;
@@ -738,7 +538,7 @@ namespace HELADERIA_CA
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(353, 746);
+            this.pictureBox9.Location = new System.Drawing.Point(348, 162);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(190, 133);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -813,26 +613,6 @@ namespace HELADERIA_CA
             this.txt_11.TabIndex = 152;
             this.txt_11.Text = "Cono simple";
             // 
-            // txt_22
-            // 
-            this.txt_22.Enabled = false;
-            this.txt_22.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_22.Location = new System.Drawing.Point(347, 297);
-            this.txt_22.Name = "txt_22";
-            this.txt_22.Size = new System.Drawing.Size(107, 27);
-            this.txt_22.TabIndex = 153;
-            this.txt_22.Text = "Cono doble";
-            // 
-            // txt_33
-            // 
-            this.txt_33.Enabled = false;
-            this.txt_33.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_33.Location = new System.Drawing.Point(662, 296);
-            this.txt_33.Name = "txt_33";
-            this.txt_33.Size = new System.Drawing.Size(100, 27);
-            this.txt_33.TabIndex = 154;
-            this.txt_33.Text = "Cono triple";
-            // 
             // txt_44
             // 
             this.txt_44.Enabled = false;
@@ -877,7 +657,7 @@ namespace HELADERIA_CA
             // 
             this.txt_88.Enabled = false;
             this.txt_88.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_88.Location = new System.Drawing.Point(349, 880);
+            this.txt_88.Location = new System.Drawing.Point(344, 296);
             this.txt_88.Name = "txt_88";
             this.txt_88.Size = new System.Drawing.Size(140, 27);
             this.txt_88.TabIndex = 159;
@@ -887,7 +667,7 @@ namespace HELADERIA_CA
             // 
             this.txt_99.Enabled = false;
             this.txt_99.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_99.Location = new System.Drawing.Point(662, 881);
+            this.txt_99.Location = new System.Drawing.Point(657, 297);
             this.txt_99.Name = "txt_99";
             this.txt_99.Size = new System.Drawing.Size(140, 27);
             this.txt_99.TabIndex = 160;
@@ -906,8 +686,6 @@ namespace HELADERIA_CA
             this.Controls.Add(this.txt_66);
             this.Controls.Add(this.txt_55);
             this.Controls.Add(this.txt_44);
-            this.Controls.Add(this.txt_33);
-            this.Controls.Add(this.txt_22);
             this.Controls.Add(this.txt_11);
             this.Controls.Add(this.tb_9);
             this.Controls.Add(this.label33);
@@ -948,22 +726,6 @@ namespace HELADERIA_CA
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_regre);
             this.Controls.Add(this.btn_orden);
-            this.Controls.Add(this.tb_3);
-            this.Controls.Add(this.cmb_3);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.txt_3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.tb_2);
-            this.Controls.Add(this.cmb_2);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.txt_2);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.tb_1);
             this.Controls.Add(this.cmb_1);
             this.Controls.Add(this.label7);
@@ -981,10 +743,6 @@ namespace HELADERIA_CA
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tb_3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tb_5)).EndInit();
@@ -1013,22 +771,6 @@ namespace HELADERIA_CA
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmb_1;
         private System.Windows.Forms.TrackBar tb_1;
-        private System.Windows.Forms.TrackBar tb_2;
-        private System.Windows.Forms.ComboBox cmb_2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txt_2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TrackBar tb_3;
-        private System.Windows.Forms.ComboBox cmb_3;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txt_3;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btn_orden;
         private System.Windows.Forms.Button btn_regre;
         private System.Windows.Forms.Button btn_salir;
@@ -1069,8 +811,6 @@ namespace HELADERIA_CA
         private System.Windows.Forms.TextBox txt_7;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.TextBox txt_11;
-        private System.Windows.Forms.TextBox txt_22;
-        private System.Windows.Forms.TextBox txt_33;
         private System.Windows.Forms.TextBox txt_44;
         private System.Windows.Forms.TextBox txt_55;
         private System.Windows.Forms.TextBox txt_66;

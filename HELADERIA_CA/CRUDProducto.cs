@@ -158,5 +158,10 @@ namespace HELADERIA_CA
                 limpiar();
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
