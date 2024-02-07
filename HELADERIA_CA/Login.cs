@@ -133,5 +133,10 @@ namespace HELADERIA_CA
             txt_usu.Text = txt_pass.Text = "";
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

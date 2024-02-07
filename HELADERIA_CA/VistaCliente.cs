@@ -32,6 +32,7 @@ namespace HELADERIA_CA
             float precio8 = 4.00f;
             float precio9 = 4.00f;
             float iva = 0.14f;
+            /*
             float subtotal = (Convert.ToInt32(txt_1.Text) * precio1) + (Convert.ToInt32(txt_2.Text) * precio2) + (Convert.ToInt32(txt_3.Text) * precio3) + (Convert.ToInt32(txt_4.Text) * precio4) + (Convert.ToInt32(txt_5.Text) * precio5) + (Convert.ToInt32(txt_6.Text) * precio6) + (Convert.ToInt32(txt_7.Text) * precio7) + (Convert.ToInt32(txt_8.Text) * precio8) + (Convert.ToInt32(txt_9.Text) * precio9);
             float total = subtotal * iva;
 
@@ -50,6 +51,7 @@ namespace HELADERIA_CA
                     }
                 }
             
+            */
 
             //try
             //{
@@ -97,8 +99,6 @@ namespace HELADERIA_CA
         private void VistaCliente_Load(object sender, EventArgs e)
         {
             cmb_1.Text = "Seleccione un sabor";
-            cmb_2.Text = "Seleccione un sabor";
-            cmb_3.Text = "Seleccione un sabor";
         }
 
         private void btn_regre_Click(object sender, EventArgs e)
@@ -119,14 +119,6 @@ namespace HELADERIA_CA
             {
                 MessageBox.Show("Por favor seleccione un sabor");
             }
-            else if (cmb_2.Text == "Seleccione un sabor")
-            {
-                MessageBox.Show("Por favor seleccione un sabor");
-            }
-            else if (cmb_3.Text == "Seleccione un sabor")
-            {
-                MessageBox.Show("Por favor seleccione un sabor");
-            }
             else {
                 facturar();
             }
@@ -138,15 +130,6 @@ namespace HELADERIA_CA
             txt_1.Text = tb_1.Value.ToString();
         }
 
-        private void tb_2_Scroll(object sender, EventArgs e)
-        {
-            txt_2.Text = tb_2.Value.ToString();
-        }
-
-        private void tb_3_Scroll(object sender, EventArgs e)
-        {
-            txt_3.Text = tb_3.Value.ToString();
-        }
 
         private void tb_4_Scroll(object sender, EventArgs e)
         {
@@ -177,8 +160,12 @@ namespace HELADERIA_CA
         {
             txt_9.Text = tb_9.Value.ToString();
         }
+
         #endregion
 
+        private void cmb_1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

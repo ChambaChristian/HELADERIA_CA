@@ -23,7 +23,7 @@ namespace HELADERIA_CA
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Heladeria_CA")]
-	public partial class DataClasses2DataContext : System.Data.Linq.DataContext
+	public partial class DataClasses1DataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -53,31 +53,31 @@ namespace HELADERIA_CA
     partial void DeleteTbl_usuario(Tbl_usuario instance);
     #endregion
 		
-		public DataClasses2DataContext() : 
+		public DataClasses1DataContext() : 
 				base(global::HELADERIA_CA.Properties.Settings.Default.Heladeria_CAConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses2DataContext(string connection) : 
+		public DataClasses1DataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses2DataContext(System.Data.IDbConnection connection) : 
+		public DataClasses1DataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses2DataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataClasses1DataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses2DataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataClasses1DataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();

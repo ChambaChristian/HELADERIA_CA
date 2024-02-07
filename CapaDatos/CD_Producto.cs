@@ -5,8 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using.System.Drawing.Imaging;
-using.System.IO;
+
 
 
 namespace CapaDatos
@@ -31,7 +30,7 @@ namespace CapaDatos
             cn.cerrar_conexion();
             return tabla;
         }
-        public void insertar_producto(string codigo, string nombre, float precio, int stock, int saborId, byte[] imagen)
+        public void insertar_producto(string codigo, string nombre, float precio)
         {
             cmd.Connection = cn.abrir_conexion();
             cmd.CommandText = "InsertarProducto";
@@ -39,16 +38,14 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@prod_codigo", codigo);
             cmd.Parameters.AddWithValue("@prod_nombre", nombre);
             cmd.Parameters.AddWithValue("@prod_precio", precio);
-            cmd.Parameters.AddWithValue("@prod_stock", stock);
-            cmd.Parameters.AddWithValue("@sabor_id", saborId);
-            cmd.Parameters.AddWithValue("@prod_imagen", imagen);
+
 
             cmd.ExecuteNonQuery();
             cmd.Parameters.Clear();
             cn.cerrar_conexion();
 
         }
-        public void editar_producto(string codigo, string nombre, float precio, int stock, int saborId, byte[] imagen, int id)
+        public void editar_producto(string codigo, string nombre, float precio, int id)
         {
             cmd.Connection = cn.abrir_conexion();
             cmd.CommandText = "EditarProducto";
@@ -56,9 +53,7 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@prod_codigo", codigo);
             cmd.Parameters.AddWithValue("@prod_nombre", nombre);
             cmd.Parameters.AddWithValue("@prod_precio", precio);
-            cmd.Parameters.AddWithValue("@prod_stock", stock);
-            cmd.Parameters.AddWithValue("@sabor_id", saborId);
-            cmd.Parameters.AddWithValue("@prod_imagen", imagen);
+
             cmd.Parameters.AddWithValue("@prod_id", id);
 
             cmd.ExecuteNonQuery();

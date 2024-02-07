@@ -31,12 +31,6 @@ namespace HELADERIA_CA
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CRUDProducto));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.s = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cmb_sabor = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txt_stock = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.dgv_producto = new System.Windows.Forms.DataGridView();
             this.btn_exit = new System.Windows.Forms.Button();
             this.txt_bus = new System.Windows.Forms.TextBox();
@@ -60,12 +54,6 @@ namespace HELADERIA_CA
             // 
             this.panel1.BackColor = System.Drawing.Color.Pink;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.s);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.cmb_sabor);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.txt_stock);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.dgv_producto);
             this.panel1.Controls.Add(this.btn_exit);
             this.panel1.Controls.Add(this.txt_bus);
@@ -89,92 +77,10 @@ namespace HELADERIA_CA
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // s
-            // 
-            this.s.BackColor = System.Drawing.Color.LightPink;
-            this.s.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.s.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.s.Location = new System.Drawing.Point(220, 262);
-            this.s.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.s.Name = "s";
-            this.s.Size = new System.Drawing.Size(119, 33);
-            this.s.TabIndex = 42;
-            this.s.Text = "Cargar";
-            this.s.UseVisualStyleBackColor = false;
-            this.s.Click += new System.EventHandler(this.s_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(49, 267);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 22);
-            this.label7.TabIndex = 41;
-            this.label7.Text = "Imagen:";
-            // 
-            // cmb_sabor
-            // 
-            this.cmb_sabor.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_sabor.FormattingEnabled = true;
-            this.cmb_sabor.Items.AddRange(new object[] {
-            "",
-            "Vainilla",
-            "Chocolate",
-            "Cafe",
-            "Limon",
-            "Mora",
-            "Fresa",
-            "Chicle",
-            "Maracuya",
-            "Cerveza",
-            "Queso",
-            "Aguacate"});
-            this.cmb_sabor.Location = new System.Drawing.Point(219, 216);
-            this.cmb_sabor.Name = "cmb_sabor";
-            this.cmb_sabor.Size = new System.Drawing.Size(121, 27);
-            this.cmb_sabor.TabIndex = 40;
-            this.cmb_sabor.Text = "Seleccione";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(49, 216);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 22);
-            this.label6.TabIndex = 39;
-            this.label6.Text = "Sabor:";
-            // 
-            // txt_stock
-            // 
-            this.txt_stock.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_stock.Location = new System.Drawing.Point(219, 174);
-            this.txt_stock.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txt_stock.Name = "txt_stock";
-            this.txt_stock.Size = new System.Drawing.Size(55, 30);
-            this.txt_stock.TabIndex = 38;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(49, 174);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 22);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Stock:";
-            // 
             // dgv_producto
             // 
             this.dgv_producto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_producto.Location = new System.Drawing.Point(91, 454);
+            this.dgv_producto.Location = new System.Drawing.Point(92, 293);
             this.dgv_producto.Name = "dgv_producto";
             this.dgv_producto.RowHeadersWidth = 51;
             this.dgv_producto.RowTemplate.Height = 24;
@@ -187,7 +93,7 @@ namespace HELADERIA_CA
             this.btn_exit.BackColor = System.Drawing.Color.LightPink;
             this.btn_exit.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_exit.Location = new System.Drawing.Point(548, 794);
+            this.btn_exit.Location = new System.Drawing.Point(549, 633);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(100, 34);
@@ -199,7 +105,7 @@ namespace HELADERIA_CA
             // txt_bus
             // 
             this.txt_bus.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_bus.Location = new System.Drawing.Point(208, 413);
+            this.txt_bus.Location = new System.Drawing.Point(209, 252);
             this.txt_bus.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_bus.Name = "txt_bus";
             this.txt_bus.Size = new System.Drawing.Size(259, 30);
@@ -211,7 +117,7 @@ namespace HELADERIA_CA
             this.btn_back.BackColor = System.Drawing.Color.LightPink;
             this.btn_back.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_back.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_back.Location = new System.Drawing.Point(23, 794);
+            this.btn_back.Location = new System.Drawing.Point(24, 633);
             this.btn_back.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(99, 34);
@@ -225,7 +131,7 @@ namespace HELADERIA_CA
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(54, 419);
+            this.label9.Location = new System.Drawing.Point(55, 258);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(146, 22);
@@ -237,7 +143,7 @@ namespace HELADERIA_CA
             this.btn_elim.BackColor = System.Drawing.Color.LightPink;
             this.btn_elim.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_elim.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_elim.Location = new System.Drawing.Point(468, 353);
+            this.btn_elim.Location = new System.Drawing.Point(469, 192);
             this.btn_elim.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_elim.Name = "btn_elim";
             this.btn_elim.Size = new System.Drawing.Size(104, 32);
@@ -251,7 +157,7 @@ namespace HELADERIA_CA
             this.btn_actu.BackColor = System.Drawing.Color.LightPink;
             this.btn_actu.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_actu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_actu.Location = new System.Drawing.Point(272, 352);
+            this.btn_actu.Location = new System.Drawing.Point(273, 191);
             this.btn_actu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_actu.Name = "btn_actu";
             this.btn_actu.Size = new System.Drawing.Size(119, 33);
@@ -265,7 +171,7 @@ namespace HELADERIA_CA
             this.btn_guardar.BackColor = System.Drawing.Color.LightPink;
             this.btn_guardar.Font = new System.Drawing.Font("Tempus Sans ITC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_guardar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_guardar.Location = new System.Drawing.Point(52, 353);
+            this.btn_guardar.Location = new System.Drawing.Point(53, 192);
             this.btn_guardar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(130, 34);
@@ -386,11 +292,5 @@ namespace HELADERIA_CA
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.DataGridView dgv_producto;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_stock;
-        private System.Windows.Forms.ComboBox cmb_sabor;
-        private System.Windows.Forms.Button s;
-        private System.Windows.Forms.Label label7;
     }
 }

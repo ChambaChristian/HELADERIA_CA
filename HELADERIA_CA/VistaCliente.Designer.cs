@@ -188,6 +188,7 @@ namespace HELADERIA_CA
             // 
             // cmb_1
             // 
+            this.cmb_1.Enabled = false;
             this.cmb_1.Font = new System.Drawing.Font("Tempus Sans ITC", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_1.FormattingEnabled = true;
             this.cmb_1.Items.AddRange(new object[] {
@@ -207,6 +208,7 @@ namespace HELADERIA_CA
             this.cmb_1.Name = "cmb_1";
             this.cmb_1.Size = new System.Drawing.Size(121, 27);
             this.cmb_1.TabIndex = 12;
+            this.cmb_1.SelectedIndexChanged += new System.EventHandler(this.cmb_1_SelectedIndexChanged);
             // 
             // tb_1
             // 
